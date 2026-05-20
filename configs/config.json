@@ -1,0 +1,62 @@
+{
+    "bidsDir": "/Volumes/MS_osama/MS100/MsBIDS",
+    "derivDir": "derivatives",
+    "statsDir": "derivatives/derivativesStats",
+    "logsDir": "derivatives/logs",
+    "fsDir": "derivatives/freesurfer",
+    "mapDir": "derivatives/maps",
+    "msTypeColors": {
+        "RRMS": [66, 133, 244],
+        "SPMS": [219, 68, 55],
+        "PPMS": [244, 180, 0],
+        "control": [15, 157, 88]
+    },
+    "excelOutputs": {
+        "dwi": {
+            "tract": "TractLesionLoad.xlsx",
+            "group": "GroupTractLesionLoad.xlsx",
+            "t1": "GroupTractT1.xlsx",
+            "fa": "GroupTractFA.xlsx",
+            "md": "GroupTractMD.xlsx",
+            "ad": "GroupTractAD.xlsx",
+            "rd": "GroupTractRD.xlsx",
+            "mtr": "GroupTractMTR.xlsx",
+            "individualStats": {
+                "t1": "IndividualTractT1.xlsx",
+                "fa": "IndividualTractFA.xlsx",
+                "md": "IndividualTractMD.xlsx",
+                "ad": "IndividualTractAD.xlsx",
+                "rd": "IndividualTractRD.xlsx",
+                "mtr": "IndividualTractMTR.xlsx"
+            }
+        },
+        "template": {
+            "tract": "templateTractLesionLoad.xlsx",
+            "group": "templateGroupTractLesionLoad.xlsx",
+            "t1": "templateGroupTractT1.xlsx",
+            "fa": "templateGroupTractFA.xlsx",
+            "md": "templateGroupTractMD.xlsx",
+            "ad": "templateGroupTractAD.xlsx",
+            "rd": "templateGroupTractRD.xlsx",
+            "mtr": "templateGroupTractMTR.xlsx",
+            "individualStats": {
+                "t1": "templateIndividualTractT1.xlsx",
+                "fa": "templateIndividualTractFA.xlsx",
+                "md": "templateIndividualTractMD.xlsx",
+                "ad": "templateIndividualTractAD.xlsx",
+                "rd": "templateIndividualTractRD.xlsx",
+                "mtr": "templateIndividualTractMTR.xlsx"
+            }
+        }
+    },
+    "tractTypes": {
+        "dwi": {
+            "inputDir": "trkTract",
+            "outputDir": "groupTract"
+        },
+        "template": {
+            "inputDir": "trkTractTemplate",
+            "outputDir": "groupTractTemplate"
+        }
+    }
+}

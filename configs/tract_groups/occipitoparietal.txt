@@ -1,0 +1,7 @@
+# Occipitoparietal tracts
+[Occipitoparietal]
+ProjectionBasalGanglia_OpticRadiationL
+Association_VerticalOccipitalFasciculusL
+ProjectionBasalGanglia_OpticRadiationR
+Association_VerticalOccipitalFasciculusR
+Commissure_CorpusCallosum_ForcepsMajor 

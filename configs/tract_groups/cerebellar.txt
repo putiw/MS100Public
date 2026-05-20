@@ -1,0 +1,9 @@
+# Cerebellar tracts
+[Cerebellar]
+Cerebellum_InferiorCerebellarPeduncleL
+Cerebellum_SuperiorCerebellarPeduncle
+Cerebellum_Vermis
+Cerebellum_MiddleCerebellarPeduncle
+Cerebellum_CerebellumL
+Cerebellum_InferiorCerebellarPeduncleR
+Cerebellum_CerebellumR 
