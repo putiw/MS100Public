@@ -21,8 +21,8 @@ Abdullah O\*, Wen P\*, Abdelrazeq AW\*, Matrosova M\*, Brylev L, Ahmad A, Bryukh
 MS100Public/
 ├── configs/                              % Configuration files
 │   ├── config.json                       % Data paths (edit bidsDir)
-│   ├── tract_names.txt                   % 27 white matter tract names
-│   └── tract_groups/                     % Tract-to-cluster assignments
+│   ├── tract_names.txt                   % 96 individual white matter tract names
+│   └── tract_groups/                     % Tract-to-group assignments (41 tracts → 4 groups)
 ├── helpers/                              % Shared utility functions
 ├── outputs/                              % (gitignored) Generated outputs
 └── *.m                                   % Analysis and figure scripts
