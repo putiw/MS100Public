@@ -4,7 +4,7 @@ Analysis code for:
 
 **Tract-based Quantitative MRI for Resolving the Clinico-Radiological Paradox in Multiple Sclerosis**
 
-Abdullah O\*, Wen P\*, Abdelrazeq AW\*, Matrosova M\*, Brylev L, Ahmad A, Bryukhov V, Melcher D, Rokers B. *Brain Communications*, 2026.
+Abdullah O\*, Wen P\*, Abdelrazeq AW\*, Matrosova M\*, Brylev L, Ahmad A, Bryukhov V, Melcher D, Rokers B.
 
 ## Setup
 
