@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.partial
+work/
+helper/staging_matlab/
+helper/private/
+
+# The repository-wide ignore rules exclude all generated data and images.
+# Re-include only the deliberately aggregate, reviewer-facing artifacts here.
+!results/figures/*.pdf
+!results/model_results/*.csv
+!results/tables/*.csv

@@ -1,0 +1,99 @@
+Outcome,MRI Metric,Model,N,p,p_adj
+EDSS,T1,Tract-based,80 (39),0.0002,0.0182
+,,Classic,80 (39),0.0003,0.0299
+,MTR,Tract-based,80 (39),< 0.0001,0.0029
+,,Classic,80 (39),0.0005,0.0506
+,FA,Tract-based,79 (39),< 0.0001,0.0046
+,,Classic,79 (39),0.1805,1.0000
+,MD,Tract-based,79 (39),0.0001,0.0090
+,,Classic,79 (39),0.0008,0.0737
+,NDI,Tract-based,79 (39),< 0.0001,0.0091
+,,Classic,79 (39),0.0001,0.0111
+,ODI,Tract-based,79 (39),< 0.0001,0.0094
+,,Classic,79 (39),0.0294,1.0000
+,ISOVF,Tract-based,79 (39),0.0007,0.0656
+,,Classic,79 (39),0.1631,1.0000
+MSPro,T1,Tract-based,79 (39),0.0010,0.0985
+,,Classic,79 (39),0.0339,1.0000
+,MTR,Tract-based,79 (39),0.0015,0.1460
+,,Classic,79 (39),0.0233,1.0000
+,FA,Tract-based,78 (39),0.0009,0.0888
+,,Classic,78 (39),0.0653,1.0000
+,MD,Tract-based,78 (39),0.0008,0.0811
+,,Classic,78 (39),0.0405,1.0000
+,NDI,Tract-based,78 (39),0.0089,0.8762
+,,Classic,78 (39),0.0554,1.0000
+,ODI,Tract-based,78 (39),0.0016,0.1579
+,,Classic,78 (39),0.1280,1.0000
+,ISOVF,Tract-based,78 (39),0.0017,0.1681
+,,Classic,78 (39),0.0602,1.0000
+T25FW,T1,Tract-based,127,< 0.0001,< 0.0001
+,,Classic,76,0.0024,0.2319
+,MTR,Tract-based,125,< 0.0001,< 0.0001
+,,Classic,76,0.0784,1.0000
+,FA,Tract-based,127,< 0.0001,< 0.0001
+,,Classic,75,0.4016,1.0000
+,MD,Tract-based,127,< 0.0001,< 0.0001
+,,Classic,75,0.0076,0.7492
+,NDI,Tract-based,127,< 0.0001,< 0.0001
+,,Classic,75,0.0393,1.0000
+,ODI,Tract-based,127,0.0002,0.0214
+,,Classic,75,0.7171,1.0000
+,ISOVF,Tract-based,127,< 0.0001,< 0.0001
+,,Classic,75,0.1428,1.0000
+9HPT-D,T1,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,79,0.0110,1.0000
+,MTR,Tract-based,128,< 0.0001,< 0.0001
+,,Classic,79,0.0034,0.3306
+,FA,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.2164,1.0000
+,MD,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0012,0.1136
+,NDI,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0033,0.3188
+,ODI,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0040,0.3968
+,ISOVF,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.1104,1.0000
+9HPT-ND,T1,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,79,0.0013,0.1318
+,MTR,Tract-based,128,< 0.0001,< 0.0001
+,,Classic,79,0.0002,0.0227
+,FA,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.1112,1.0000
+,MD,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0014,0.1343
+,NDI,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,< 0.0001,0.0016
+,ODI,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0018,0.1800
+,ISOVF,Tract-based,130,< 0.0001,< 0.0001
+,,Classic,78,0.0093,0.9074
+SDMT,T1,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,80,0.0055,0.5362
+,MTR,Tract-based,129,< 0.0001,< 0.0001
+,,Classic,80,0.0021,0.2035
+,FA,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,79,0.0490,1.0000
+,MD,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,79,0.0004,0.0346
+,NDI,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,79,0.0009,0.0876
+,ODI,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,79,0.0039,0.3801
+,ISOVF,Tract-based,131,< 0.0001,< 0.0001
+,,Classic,79,0.1156,1.0000
+MSFC-SDMT,T1,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,75,0.0021,0.2023
+,MTR,Tract-based,124,< 0.0001,< 0.0001
+,,Classic,75,0.0015,0.1498
+,FA,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,74,0.1388,1.0000
+,MD,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,74,0.0024,0.2379
+,NDI,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,74,0.0013,0.1235
+,ODI,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,74,0.0314,1.0000
+,ISOVF,Tract-based,126,< 0.0001,< 0.0001
+,,Classic,74,0.3143,1.0000

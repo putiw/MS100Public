@@ -1,0 +1,167 @@
+{
+  "study": {
+    "session": "ses-01",
+    "expected_imaging_subjects": 132,
+    "expected_clinical_subjects": 132,
+    "expected_primary_tract_subjects": 132,
+    "expected_missing_original_group_mask_subjects": 0,
+    "expected_noddi_missing_metric_cells_per_table": 591,
+    "expected_clinical_noddi_overlap": 131,
+    "expected_noddi_only_subjects": 1,
+    "expected_clinical_only_subjects": 1,
+    "expected_source_cohort_manifest_sha256": "6cb5dfeae599472202e7dd2428a025b9aa959441d1b249388ff2c991bbf1acd2",
+    "expected_group_mask_manifest_sha256": "19dbe12dfcd8f321d255e956cbc9b4f0576ffb27d50dab0465d031b69faf7a35"
+  },
+  "frozen_aggregate_inputs": [
+    {
+      "name": "clinicalScore.xlsx",
+      "directory": "stats",
+      "match_mode": "raw_sha256",
+      "expected_fingerprint": "c3f0dab9999f564cdbc5cac88360b1746b72ea877951a5a9999e065b6ea0839c"
+    },
+    {
+      "name": "GroupTractT1_All.xlsx",
+      "directory": "stats",
+      "match_mode": "semantic_legacy_tract_5sig_v2",
+      "expected_fingerprint": "d943bf65ad31a11c6cc798c1a29e870abadf655a8d33116e8ec4d3c7af193450"
+    },
+    {
+      "name": "GroupTractMTR_All.xlsx",
+      "directory": "stats",
+      "match_mode": "semantic_legacy_tract_5sig_v2",
+      "expected_fingerprint": "d94be748c5f95a204ae7c517dbc76605fb181b0dbd037e5e695ad61d4f48cb20"
+    },
+    {
+      "name": "GroupTractFA_All.xlsx",
+      "directory": "stats",
+      "match_mode": "semantic_legacy_tract_5sig_v2",
+      "expected_fingerprint": "4f7cc8f57628f8c18529175132be5d43d1aa78222d21821d5811d14e79a6e830"
+    },
+    {
+      "name": "GroupTractMD_All.xlsx",
+      "directory": "stats",
+      "match_mode": "semantic_legacy_tract_5sig_v2",
+      "expected_fingerprint": "9f6f695c6ce09c913e0820c0db1da4988ec2a30afd953b370271eadf09b00bdf"
+    },
+    {
+      "name": "icometrixLesionStats.xlsx",
+      "directory": "stats",
+      "match_mode": "raw_sha256",
+      "expected_fingerprint": "05f4edec3f922c706b0f404d1801fe26976ed7abfcf6356a8690dab7876b4b68"
+    },
+        {
+            "name": "GroupTractNDI_All.csv",
+            "directory": "metrics",
+            "match_mode": "semantic_noddi_tract_5dp_v1",
+            "expected_fingerprint": "a24f01d00b003fabd9a174bcfa9e4650ce7097fa2ac79cf1b121430c5911b982"
+        },
+        {
+            "name": "GroupTractODI_All.csv",
+            "directory": "metrics",
+            "match_mode": "semantic_noddi_tract_5dp_v1",
+            "expected_fingerprint": "2660ab3fe4927973ed73d0ff3c28d0943c2b3a57583c1180d0f0518556786def"
+        },
+        {
+            "name": "GroupTractFWF_All.csv",
+            "directory": "metrics",
+            "match_mode": "semantic_noddi_tract_5dp_v1",
+            "expected_fingerprint": "f07d877f80b8641915d2887edbe1f4aec4c9a2ecf26357a809eab8d99799e44e"
+        }
+  ],
+  "acquisition": {
+    "expected_volumes": 132,
+    "expected_shell_counts": {
+      "0": 4,
+      "1000": 64,
+      "2500": 64
+    },
+    "voxel_size_mm": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "bvec_unit_tolerance": 0.001,
+    "affine_absolute_tolerance": 1e-05,
+    "scheme_b_step": [
+      0,
+      1000,
+      2500
+    ],
+    "b0_threshold": 0
+  },
+  "model": {
+    "implementation": "AMICO 2.1.1",
+    "name": "NODDI",
+    "orientation_distribution": "Watson",
+    "dPar_mm2_per_s": 0.0017,
+    "dIso_mm2_per_s": 0.003,
+    "IC_VFs": [
+      0.1,
+      0.1809090909090909,
+      0.26181818181818184,
+      0.34272727272727277,
+      0.4236363636363637,
+      0.5045454545454546,
+      0.5854545454545454,
+      0.6663636363636364,
+      0.7472727272727273,
+      0.8281818181818181,
+      0.9090909090909092,
+      0.99
+    ],
+    "IC_ODs": [
+      0.03,
+      0.06,
+      0.09,
+      0.19,
+      0.29,
+      0.39,
+      0.49,
+      0.59,
+      0.69,
+      0.79,
+      0.89,
+      0.99
+    ],
+    "isExvivo": false,
+    "solver_lambda1": 0.5,
+    "solver_lambda2": 0.001,
+    "lmax": 12,
+    "ndirs": 500
+  },
+  "evaluation": {
+    "doNormalizeSignal": true,
+    "doKeepb0Intact": false,
+    "doComputeRMSE": true,
+    "doComputeNRMSE": true,
+    "doSaveModulatedMaps": false,
+    "doMergeB0": false,
+    "doDebiasSignal": false,
+    "doDirectionalAverage": false,
+    "DTI_fit_method": "OLS",
+    "nthreads": 1,
+    "BLAS_nthreads": 1,
+    "b0_min_signal": 0,
+    "replace_bad_voxels": null,
+    "rmse_buffer_min_voxels_per_thread": 132,
+    "rmse_buffer_safety_note": "AMICO 2.1.1 sizes an RMSE scratch buffer by per-thread voxel count but writes one entry per acquisition measurement. With 132 measurements, require mask_voxels // nthreads >= 132; this run uses one AMICO thread per isolated subject process."
+  },
+  "execution": {
+    "default_subject_processes": 4,
+    "bootstrap_subject_selection": "lexicographically_first_source_subject",
+    "resume_completed_subjects": true
+  },
+  "tract_extraction": {
+    "transform_order": "ants_cli_inverseWarp_then_inverseAffine_empirically_validated",
+    "transform_order_semantics": "ANTs command-line order; the final inverse-affine argument is applied first",
+    "scalar_interpolation": "Linear",
+    "support_interpolation": "GenericLabel",
+    "percentile_method": "Hazen/MATLAB_R2024b_prctile",
+    "primary_summaries": {
+      "NDI": "P10 tail and NAWM",
+      "ODI": "P90 tail and NAWM",
+      "FWF": "P90 tail and NAWM"
+    },
+    "ODI_sensitivity": "P10 tail"
+  }
+}
