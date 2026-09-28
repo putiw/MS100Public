@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "Complete manuscript-format threshold-only EDSS >=4 sensitivity package",
+  "canonical_source": "revision/results",
+  "sensitivity_results": "revisionExtras/results",
+  "threshold_change": {
+    "canonical": "EDSS > 3.0 (equivalent to EDSS >=3.5 in these data)",
+    "sensitivity": "EDSS >= 4.0"
+  },
+  "cohort_policy": "Hold each canonical analysis cohort fixed and change only the EDSS threshold. Supplementary Table 5 retains RR047 in the frozen canonical lesion cohort (N=89); removing RR047 would conflate threshold and cohort changes.",
+  "qMRI": {
+    "edss_rows_replaced": 28,
+    "N": [79, 80],
+    "positive_N": 31,
+    "edss_adjusted_significant_m98": 6,
+    "all_adjusted_significant_m98": 44
+  },
+  "lesion_load": {
+    "edss_rows_replaced": 8,
+    "N": 89,
+    "positive_N": 32,
+    "raw_significant": 7
+  },
+  "multiplicity": "Adjusted qMRI p-values use the manuscript-wide Bonferroni family m=98; exploratory m=14 values are not inserted into the manuscript-format package.",
+  "validation": {
+    "meaningful_result_file_count": 13,
+    "changed_file_count": 6,
+    "unchanged_file_count": 7,
+    "canonical_tree_unchanged": true,
+    "same_file_inventory": true,
+    "non_EDSS_rows_unchanged": true,
+    "qMRI_canonical_baseline_rows_passed": 28,
+    "lesion_canonical_baseline_rows_passed": 8,
+    "changed_files": [
+      "model_results/all_qmri_manuscript_models.csv",
+      "model_results/lesionload_manuscript_models.csv",
+      "tables/Main_Table_2.csv",
+      "tables/Supplementary_Table_3.csv",
+      "tables/Supplementary_Table_4.csv",
+      "tables/Supplementary_Table_5.csv"
+    ]
+  }
+}

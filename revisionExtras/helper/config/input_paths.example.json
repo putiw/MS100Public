@@ -1,0 +1,8 @@
+{
+  "metrics_dir": "/path/to/frozen/aggregate/metric/tables",
+  "stats_dir": "/path/to/frozen/derivativesStats",
+  "classical_lesion_file": "/path/to/frozen/icometrixLesionLoad.xlsx",
+  "whole_brain_means_file": "/path/to/frozen/whole_brain_parenchymal_means.csv",
+  "matlab_executable": "/path/to/MATLAB/bin/matlab",
+  "plot_python_executable": "/path/to/python-with-matplotlib"
+}

@@ -1,0 +1,58 @@
+Outcome,Metric,Model,N,AUC (95% CI),AIC
+EDSS,LN,Whole Brain,89 (32),"0.660 [0.541, 0.776]",116.47
+,LV,Whole Brain,89 (32),"0.800 [0.692, 0.884]",102.22
+,LN,Tract-based,89 (32),"0.804 [0.710, 0.890]",102.91
+,LN,Classic,89 (32),"0.734 [0.620, 0.842]",106.19
+,LV,Tract-based,89 (32),"0.858 [0.769, 0.934]",81.93
+,LV,Classic,89 (32),"0.809 [0.705, 0.898]",93.86
+,Lnorm,Tract-based,89 (32),"0.845 [0.745, 0.925]",85.71
+,Lnorm,Classic,89 (32),"0.797 [0.689, 0.893]",94.88
+MSPro,LN,Whole Brain,88 (42),"0.619 [0.494, 0.734]",123.11
+,LV,Whole Brain,88 (42),"0.693 [0.579, 0.803]",117.97
+,LN,Tract-based,88 (42),"0.704 [0.587, 0.808]",115.75
+,LN,Classic,88 (42),"0.639 [0.524, 0.754]",120.15
+,LV,Tract-based,88 (42),"0.762 [0.655, 0.855]",103.76
+,LV,Classic,88 (42),"0.707 [0.592, 0.815]",116.43
+,Lnorm,Tract-based,88 (42),"0.739 [0.628, 0.841]",111.75
+,Lnorm,Classic,88 (42),"0.704 [0.591, 0.813]",117.42
+Outcome,Metric,Model,N,R2,AIC
+T25FW,LN,Whole Brain,85,0.048,91.55
+,LV,Whole Brain,85,0.141,82.77
+,LN,Tract-based,85,0.141,82.78
+,LN,Classic,85,0.134,83.50
+,LV,Tract-based,85,0.161,80.80
+,LV,Classic,85,0.193,77.50
+,Lnorm,Tract-based,85,0.164,80.48
+,Lnorm,Classic,85,0.193,77.55
+9HPT-D,LN,Whole Brain,88,0.040,-4.40
+,LV,Whole Brain,88,0.143,-14.30
+,LN,Tract-based,88,0.229,-23.64
+,LN,Classic,88,0.183,-18.53
+,LV,Tract-based,88,0.282,-29.96
+,LV,Classic,88,0.198,-20.24
+,Lnorm,Tract-based,88,0.189,-19.18
+,Lnorm,Classic,88,0.205,-21.00
+9HPT-ND,LN,Whole Brain,88,0.122,23.96
+,LV,Whole Brain,88,0.321,1.36
+,LN,Tract-based,88,0.253,9.82
+,LN,Classic,88,0.213,14.36
+,LV,Tract-based,88,0.379,-6.51
+,LV,Classic,88,0.359,-3.73
+,Lnorm,Tract-based,88,0.340,-1.16
+,Lnorm,Classic,88,0.337,-0.75
+SDMT,LN,Whole Brain,89,0.041,708.66
+,LV,Whole Brain,89,0.220,690.22
+,LN,Tract-based,89,0.123,700.71
+,LN,Classic,89,0.075,705.47
+,LV,Tract-based,89,0.240,687.95
+,LV,Classic,89,0.241,687.88
+,Lnorm,Tract-based,89,0.299,680.71
+,Lnorm,Classic,89,0.243,687.55
+MSFC-SDMT,LN,Whole Brain,84,0.057,202.54
+,LV,Whole Brain,84,0.253,182.88
+,LN,Tract-based,84,0.192,189.50
+,LN,Classic,84,0.145,194.26
+,LV,Tract-based,84,0.290,178.70
+,LV,Classic,84,0.289,178.81
+,Lnorm,Tract-based,84,0.342,172.26
+,Lnorm,Classic,84,0.293,178.28

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "description": "SHA-256 fingerprints for the frozen local inputs and manuscript-matched cohort sources used by the Comment 14 whole-brain qMRI models.",
+  "files": [
+    {
+      "location": "clinical_file",
+      "name": "clinicalScore.xlsx",
+      "sha256": "c3f0dab9999f564cdbc5cac88360b1746b72ea877951a5a9999e065b6ea0839c"
+    },
+    {
+      "location": "whole_brain_means_file",
+      "name": "whole_brain_parenchymal_means.csv",
+      "sha256": "35fdbbd3c5be58e0cab810c2256ff36df63363eb658e0c272ae9a4415cc04794"
+    },
+    {
+      "location": "classical_file",
+      "name": "ClassicalRegionAllMetrics.csv",
+      "sha256": "0da16b17863521a426b9a37399d5409bba6e8c1c0a370cc4eeea3e637de1c3ba"
+    },
+    {
+      "location": "tract_t1_file",
+      "name": "GroupTractT1_All.xlsx",
+      "sha256": "d6b06e980992ea33e2d6fdf5b3036c6730a9856d50face6176f6794e8065d4fd"
+    },
+    {
+      "location": "tract_mtr_file",
+      "name": "GroupTractMTR_All.xlsx",
+      "sha256": "23c25ec8514677d85f2a695bf955f047bbcc0c01307ca1e41c0d368a77706a9e"
+    },
+    {
+      "location": "tract_fa_file",
+      "name": "GroupTractFA_All.xlsx",
+      "sha256": "c77ee61e0fe2b5daba8a717dbf795eda38a6553f666b0538935ec4bfb6cdb2a8"
+    },
+    {
+      "location": "tract_md_file",
+      "name": "GroupTractMD_All.xlsx",
+      "sha256": "eeb4a0bcdcdb4df87dc9072e32f1507ae822610005499559a5eb250f829a098d"
+    }
+  ]
+}

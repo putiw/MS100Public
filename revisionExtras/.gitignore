@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.partial
+work/
+helper/config/input_paths.local.json
+
+# The repository-wide rules ignore aggregate data and images. Re-include
+# only the deliberately public, aggregate EDSS sensitivity artifacts.
+!results/figures/*.pdf
+!results/model_results/*.csv
+!results/tables/*.csv
+!helper/reference_qa/**/*.csv
+!helper/reference_qa/**/*.json
+!helper/reference_qa/**/*.pdf
+!helper/reference_qa/**/*.png

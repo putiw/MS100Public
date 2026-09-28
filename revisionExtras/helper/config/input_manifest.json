@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "description": "Raw SHA-256 fingerprints for the frozen local aggregate inputs used by the EDSS threshold sensitivity.",
+  "files": [
+    {
+      "location": "stats_dir",
+      "name": "clinicalScore.xlsx",
+      "sha256": "c3f0dab9999f564cdbc5cac88360b1746b72ea877951a5a9999e065b6ea0839c"
+    },
+    {
+      "location": "stats_dir",
+      "name": "GroupTractLesionLoad.xlsx",
+      "sha256": "f2f48e6338b0c6767e49e462a4248dbbb69d7d963f60c594212fa06e81ad8190"
+    },
+    {
+      "location": "classical_lesion_file",
+      "name": "icometrixLesionLoad.xlsx",
+      "sha256": "06edad9cf4da30e739be3cb46f8eeaa1b4b20e7851a35a766830493c9e1b243c"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "ClassicalRegionAllMetrics.csv",
+      "sha256": "0da16b17863521a426b9a37399d5409bba6e8c1c0a370cc4eeea3e637de1c3ba"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractT1_All.xlsx",
+      "sha256": "d6b06e980992ea33e2d6fdf5b3036c6730a9856d50face6176f6794e8065d4fd"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractMTR_All.xlsx",
+      "sha256": "23c25ec8514677d85f2a695bf955f047bbcc0c01307ca1e41c0d368a77706a9e"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractFA_All.xlsx",
+      "sha256": "c77ee61e0fe2b5daba8a717dbf795eda38a6553f666b0538935ec4bfb6cdb2a8"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractMD_All.xlsx",
+      "sha256": "eeb4a0bcdcdb4df87dc9072e32f1507ae822610005499559a5eb250f829a098d"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractNDI_All.csv",
+      "sha256": "065dd978ffd7d2c8333d9efc3f74ee7fe1664d3dad0a977f6cfe4c3ee1a28318"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractODI_All.csv",
+      "sha256": "b7e8fefdcc2ad81868b43913ed5b166722df59088de94db42f58547ea4045e81"
+    },
+    {
+      "location": "metrics_dir",
+      "name": "GroupTractFWF_All.csv",
+      "sha256": "d8baa48ecd8befff66c39a9ae283d4106ec2b470fa4d61d2e6bea85c4d567f86"
+    }
+  ]
+}
