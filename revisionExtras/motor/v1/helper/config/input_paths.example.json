@@ -1,0 +1,9 @@
+{
+  "source_bids_root": "/path/to/read-only/MsBIDS",
+  "local_snapshot": "/path/to/local/source_snapshot",
+  "noddi_maps_dir": "/path/to/local/transformed_maps",
+  "stats_dir": "/path/to/local/derivativesStats",
+  "metrics_dir": "/path/to/local/frozen/metric_tables",
+  "scratch_root": "/path/to/local/ignored/scratch",
+  "matlab_executable": "/path/to/MATLAB/bin/matlab"
+}

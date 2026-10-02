@@ -1,0 +1,10 @@
+{
+  "status": "INPUTS_NOT_STAGED",
+  "expected_model_rows": 196,
+  "observed_model_rows": 196,
+  "components": 13,
+  "subjects_checked": 0,
+  "subject_ids_published": false,
+  "rng_seed": 42,
+  "reverse_pe_b0_confirmation": "Four reverse-phase-encoded (PA) b=0 volumes were acquired per run."
+}

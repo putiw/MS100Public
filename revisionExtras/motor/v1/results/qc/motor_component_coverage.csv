@@ -1,0 +1,14 @@
+Component,SubjectsChecked,Available,Unavailable,PresentButEmpty
+ProjectionBrainstem_CorticospinalTractL,132,129,3,0
+ProjectionBrainstem_CorticospinalTractR,132,130,2,0
+ProjectionBrainstem_CorticobulbarTractL,132,35,97,0
+ProjectionBrainstem_CorticobulbarTractR,132,68,64,0
+ProjectionBrainstem_CorticopontineTractL_Frontal,132,129,3,0
+ProjectionBrainstem_CorticopontineTractR_Frontal,132,129,3,0
+ProjectionBrainstem_DentatorubrothalamicTract-lr,132,118,14,0
+ProjectionBrainstem_DentatorubrothalamicTract-rl,132,122,10,0
+ProjectionBrainstem_NonDecussatingDentatorubrothalamicTractL,132,128,4,0
+ProjectionBrainstem_NonDecussatingDentatorubrothalamicTractR,132,129,3,0
+Cerebellum_SuperiorCerebellarPeduncle,132,130,2,0
+Cerebellum_MiddleCerebellarPeduncle,132,130,2,0
+Commissure_CorpusCallosum_Body,132,73,59,0

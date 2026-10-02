@@ -1,0 +1,37 @@
+{
+  "auc_bootstrap_resamples": 2000,
+  "comparison_cells": 98,
+  "component_count": 13,
+  "edss_rule": "EDSS > 3",
+  "legacy_missing_policy": "zero-valued legacy summaries excluded from model fitting",
+  "mask_geometry_nonzero_and_split_pass": true,
+  "matched_subject_sets_within_all_cells": true,
+  "max_missing_components_per_subject": 13,
+  "min_combined_voxels": 19116,
+  "min_left_voxels": 8524,
+  "min_right_voxels": 9413,
+  "missing_metric_map_subject_counts": {
+    "FA": 0,
+    "FWF": 0,
+    "MD": 0,
+    "MTR": 0,
+    "NDI": 0,
+    "ODI": 0,
+    "T1": 0
+  },
+  "model_rows": 196,
+  "model_status_counts": {
+    "COMPLETED": 196
+  },
+  "motor_mask_available_subjects": 130,
+  "motor_mask_unavailable_subjects": 2,
+  "mspro_rule": "MSPro > 1",
+  "noddi_zero_policy": "valid inside fitting support",
+  "paired_delta_auc_computed": false,
+  "reverse_pe_b0_confirmation": "Four reverse-phase-encoded (PA) b=0 volumes were acquired per run.",
+  "rng_seed": 42,
+  "schema_version": 1,
+  "status": "PASS",
+  "subject_identifiers_published": false,
+  "subjects_checked": 132
+}

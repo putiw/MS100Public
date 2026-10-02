@@ -1,0 +1,7 @@
+{
+  "metrics_dir": "/path/to/frozen/aggregate/metric/tables",
+  "stats_dir": "/path/to/frozen/derivativesStats",
+  "classical_file": "/path/to/frozen/aggregate/metric/tables/ClassicalRegionAllMetrics.csv",
+  "whole_brain_means_file": "/path/to/frozen/whole_brain_parenchymal_means.csv",
+  "matlab_executable": "/path/to/MATLAB/bin/matlab"
+}

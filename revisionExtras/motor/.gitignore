@@ -1,0 +1,10 @@
+__pycache__/
+work/
+helper/config/input_paths.local.json
+*.nii
+*.nii.gz
+*.mat
+*.xlsx
+*.csv
+!results/**/*.csv
+!helper/config/input_manifest.json

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "policy": "Local staged inputs only; mounted source storage is read-only and never an analysis output target.",
+  "required_metrics": ["T1", "MTR", "FA", "MD", "NDI", "ODI", "FWF"],
+  "required_model_rows": 196,
+  "hashes": {}
+}

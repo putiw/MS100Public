@@ -1,0 +1,15 @@
+{
+  "analysis": "Motor 13-tract reviewer analysis",
+  "status": "PASS",
+  "clean_rerun_matches_packaged_results": true,
+  "byte_identical_files_checked": [
+    "model_results/motor_models.csv",
+    "tables/Motor_Model_Comparison.csv",
+    "qc/motor_component_coverage.csv",
+    "qc/motor_analysis_report.json",
+    "qc/input_manifest.json"
+  ],
+  "model_rows": 196,
+  "comparison_cells": 98,
+  "subject_identifiers_published": false
+}

@@ -1,0 +1,4 @@
+helper/config/input_paths.local.json
+work/
+__pycache__/
+*.pyc

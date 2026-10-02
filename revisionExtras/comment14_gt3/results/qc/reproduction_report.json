@@ -1,0 +1,12 @@
+{
+  "analysis": "Comment 14 whole-brain imaging-only T1/MTR/FA/MD",
+  "cohort_policy": "Matched manuscript MS cohorts; controls excluded",
+  "covariates": "none",
+  "edss_rule": "EDSS > 3",
+  "model_rows": 20,
+  "table_rows": 20,
+  "status": "PASS",
+  "clean_rerun_matches_packaged_models_sha256": "83272ecab05d7be60454d2c7cd38f59a2b95feab20ab85a2b34076b802c0a8aa",
+  "clean_rerun_matches_packaged_table_sha256": "4ad535d0d136c41c4841daba6f7fc4ed20b7c53d1bcdc2b837101ad1a1f04da5",
+  "subject_identifiers_published": false
+}

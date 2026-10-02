@@ -1,0 +1,9 @@
+{
+  "clinical_file": "/path/to/frozen/derivativesStats/clinicalScore.xlsx",
+  "metrics_dir": "/path/to/frozen/aggregate/metric/tables",
+  "component_root": "/path/to/local/scratch/TractoFlow_post",
+  "hemisphere_root": "/path/to/local/scratch/freesurfer",
+  "map_root": "/path/to/local/scratch/maps",
+  "lesion_root": "/path/to/local/scratch/lesionMask",
+  "work_root": "/path/to/local/ignored/scratch/ms100_motor"
+}

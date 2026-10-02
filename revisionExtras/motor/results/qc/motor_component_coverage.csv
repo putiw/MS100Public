@@ -1,0 +1,14 @@
+component,subjects_checked,available_subjects,missing_subjects,status
+ProjectionBrainstem_CorticospinalTractL,0,0,0,NOT_STAGED
+ProjectionBrainstem_CorticospinalTractR,0,0,0,NOT_STAGED
+ProjectionBrainstem_CorticobulbarTractL,0,0,0,NOT_STAGED
+ProjectionBrainstem_CorticobulbarTractR,0,0,0,NOT_STAGED
+ProjectionBrainstem_CorticopontineTractL_Frontal,0,0,0,NOT_STAGED
+ProjectionBrainstem_CorticopontineTractR_Frontal,0,0,0,NOT_STAGED
+ProjectionBrainstem_DentatorubrothalamicTract-lr,0,0,0,NOT_STAGED
+ProjectionBrainstem_DentatorubrothalamicTract-rl,0,0,0,NOT_STAGED
+ProjectionBrainstem_NonDecussatingDentatorubrothalamicTractL,0,0,0,NOT_STAGED
+ProjectionBrainstem_NonDecussatingDentatorubrothalamicTractR,0,0,0,NOT_STAGED
+Cerebellum_SuperiorCerebellarPeduncle,0,0,0,NOT_STAGED
+Cerebellum_MiddleCerebellarPeduncle,0,0,0,NOT_STAGED
+Commissure_CorpusCallosum_Body,0,0,0,NOT_STAGED

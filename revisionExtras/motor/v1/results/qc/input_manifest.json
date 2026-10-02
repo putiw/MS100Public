@@ -1,0 +1,19 @@
+{
+  "aggregate_input_sha256": {
+    "FA": "c77ee61e0fe2b5daba8a717dbf795eda38a6553f666b0538935ec4bfb6cdb2a8",
+    "FWF": "d8baa48ecd8befff66c39a9ae283d4106ec2b470fa4d61d2e6bea85c4d567f86",
+    "MD": "eeb4a0bcdcdb4df87dc9072e32f1507ae822610005499559a5eb250f829a098d",
+    "MTR": "23c25ec8514677d85f2a695bf955f047bbcc0c01307ca1e41c0d368a77706a9e",
+    "NDI": "065dd978ffd7d2c8333d9efc3f74ee7fe1664d3dad0a977f6cfe4c3ee1a28318",
+    "ODI": "b7e8fefdcc2ad81868b43913ed5b166722df59088de94db42f58547ea4045e81",
+    "T1": "d6b06e980992ea33e2d6fdf5b3036c6730a9856d50face6176f6794e8065d4fd",
+    "clinical": "c3f0dab9999f564cdbc5cac88360b1746b72ea877951a5a9999e065b6ea0839c"
+  },
+  "motor_definition_sha256": "6c3ae0072e4c9d5e8ca8a014d289d799b6beaaab69abd806a6ad437829539846",
+  "output_sha256": {
+    "Motor_Model_Comparison.csv": "731f7f6049253ec2e63dfbbbf5ce6057370ccccceb1a4e420875f82758482f7d",
+    "motor_component_coverage.csv": "2017c06a1173a0a85d6524356e633e9b7c489b90454f0fdb6e52523a3334ad69",
+    "motor_models.csv": "70f4047dab182019704592b2e411f6275faeb1d3d793f298099e99d482de1a5d"
+  },
+  "schema_version": 1
+}

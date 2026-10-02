@@ -1,0 +1,3 @@
+!model_results/*.csv
+!tables/*.csv
+!qc/*.json
