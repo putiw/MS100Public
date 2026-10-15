@@ -1,0 +1,7 @@
+Figure,Panel,CohortPolicy,Framework,Tissue,Metric,Region,Subtype,N,Mean,SD,SEM,Median,Q1,Q3,ZeroCount,ZeroPolicy,SourceSHA256
+Figure4,A bar,caption_matched_89,WholeBrain,Lesion volume (mL),LV,WholeBrain,RRMS,49,6.641938775510204,6.168435773517205,0.8812051105024578,4.318,1.819,10.189,0,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d
+Figure4,A bar,caption_matched_89,WholeBrain,Lesion volume (mL),LV,WholeBrain,SPMS,23,27.211739130434786,19.898132601321233,4.149047460194474,23.345,13.311,31.4675,0,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d
+Figure4,A bar,caption_matched_89,WholeBrain,Lesion volume (mL),LV,WholeBrain,PPMS,17,11.001882352941177,8.739569582381854,2.1196569712115063,10.026,4.062,14.152,0,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d
+Figure4,A bar,caption_matched_89,Tract,Lesion volume (mL),LV,FourTractRegionSum,RRMS,49,1.5993469387755104,1.7072326968789335,0.24389038526841908,0.889,0.3,2.141,1,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d
+Figure4,A bar,caption_matched_89,Tract,Lesion volume (mL),LV,FourTractRegionSum,SPMS,23,7.328956521739129,5.638994119507654,1.1758115547004289,5.553,4.395,8.385,0,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d
+Figure4,A bar,caption_matched_89,Tract,Lesion volume (mL),LV,FourTractRegionSum,PPMS,17,4.068058823529412,4.486509897328159,1.0881384821801792,2.926,1.355,4.514,0,retain,4aeb374eed10a2b737794e9f51a6a696747839271500a4e67c5fdb0ca3eb7b2d

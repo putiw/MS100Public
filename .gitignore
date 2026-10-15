@@ -5,6 +5,13 @@
 *.mat
 *.rds
 
+# Aggregate-only Osama follow-up tables; the subject-level CSV stays outside Git.
+!revisionExtras/osama_followup_20261013/results/paired_motor_delta_auc.csv
+!revisionExtras/osama_followup_20261013/results/lesion_load_by_region_subtype_caption_matched_89.csv
+!revisionExtras/osama_followup_20261013/results/figure4a_bar_by_subtype_caption_matched_89.csv
+!revisionExtras/osama_followup_20261013/results/classical_exclusions_by_metric.csv
+!revisionExtras/osama_followup_20261013/results/posthoc_fig4_fig5_caption_matched_89.csv
+
 # MATLAB autosave
 *.asv
 

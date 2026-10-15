@@ -1,0 +1,8 @@
+Metric,SourceMetric,ClinicalMSN,ExcludedLackingLesionInAnyClassicalRegionN,ExcludedLackingLesionsInAllFourClassicalRegionsN,ExcludedOtherClassicalPredictorReasonN,TotalUnavailableClassicalPredictorN,CompleteClassicalPredictorN
+T1,T1,89,5,0,4,9,80
+MTR,MTR,89,5,0,4,9,80
+FA,FA,89,5,0,5,10,79
+MD,MD,89,5,0,5,10,79
+NDI,NDI,89,5,0,5,10,79
+ODI,ODI,89,5,0,5,10,79
+ISOVF,FWF,89,5,0,5,10,79
