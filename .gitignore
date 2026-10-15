@@ -24,6 +24,7 @@ Thumbs.db
 *.jpg
 *.tiff
 *.pdf
+!revisionExtras/osama_followup_20261013/results/Figure4_matched89_original_style.pdf
 
 # MATLAB generated
 *.mex*

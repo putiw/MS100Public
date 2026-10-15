@@ -3,6 +3,9 @@
 
 The one row-per-subject export is deliberately written outside the repository.
 All outputs are created exclusively; existing files are never overwritten.
+This is stage 1: only its classical-exclusion table and base private CSV
+feed the current handoff. Its legacy figure summaries/tests are intermediate;
+build_mounted_figure_followup.py produces the final Figure 4/5 deliverables.
 """
 
 from __future__ import annotations
@@ -142,7 +145,7 @@ def main() -> None:
         if len(standard[metric]) != 132 or set(standard[metric].index) != set(motor[metric].index):
             raise AssertionError(f"Standard/Motor source mismatch for {metric}")
 
-    # Figure 4 follows the original radar scripts: all 90 lesion-load rows,
+    # Historical intermediate: use the frozen 90-row lesion-load snapshot,
     # true zeros retained, mean and SEM by subtype and anatomical region.
     lesion_rows = []
     figure4_features = []
