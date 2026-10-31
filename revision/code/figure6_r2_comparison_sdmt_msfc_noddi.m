@@ -8,8 +8,7 @@ function report = figure6_r2_comparison_sdmt_msfc_noddi(varargin)
 %   2. seven rather than four imaging metrics;
 %   3. a second pass for the age/gender-adjusted supplementary figure; and
 %   4. configurable input/output paths for the reviewer package.
-% Figure 6 and Supplementary Figure S2 use the final one-row-by-five-column
-% layout at the journal's 170-mm page width.
+% Five stacked outcome panels at 170 x 210 mm retain readable final-size text.
 %
 % NDI, ODI, and ISOVF use the same tract-based/classical-region comparison as
 % the original four metrics, including separate exact matched-subject refits.
@@ -95,22 +94,22 @@ function outputs = render_figures(Dfull,DsameN,metrics,clinicalLabels, ...
 % the original manuscript figure.
 
 valueColumns = {'R2','R2_Demo'};
-titles = {'R^2 Comparison: Tract-based vs Classic (without demographics)', ...
-          'R^2 Comparison: Tract-based vs Classic (with age and recorded gender)'};
-pdfNames = {'Figure6_with_SDMT_MSFC_NODDI.pdf', ...
-    'Supplementary_Figure_S2_with_SDMT_MSFC_NODDI.pdf'};
+titles = {'R²: Tract-based vs Classical (without demographics)', ...
+          'R²: Tract-based vs Classical (with age and recorded gender)'};
+pdfNames = {'Figure6.pdf', ...
+    'Supplementary_FigureS2.pdf'};
 pngNames = {'Figure6_with_SDMT_MSFC_NODDI.png', ...
     'Supplementary_Figure_S2_with_SDMT_MSFC_NODDI.png'};
-% 169 x 80 mm: full journal width, inside the 170 x 210 mm limit.
-figureSize = [6.65 3.15];
+% Small rounding margin inside the journal limit (MATLAB PDF uses integer points).
+figureSize = [169.8 209.8] / 25.4;
 barWidth = 0.92;
 
 for fi = 1:numel(valueColumns)
     valueColumn = valueColumns{fi};
     fig = figure('Visible','off', 'Units','inches', ...
         'Position',[0.5 0.5 figureSize], 'Color','white');
-    tl = tiledlayout(fig,1,5,'TileSpacing','compact','Padding','compact');
-    title(tl,titles{fi},'FontName','Arial','FontSize',9.5, ...
+    tl = tiledlayout(fig,5,1,'TileSpacing','compact','Padding','compact');
+    title(tl,titles{fi},'FontName','Arial','FontSize',10, ...
         'FontWeight','bold','Interpreter','tex');
     firstAx = [];
     legendHandles = gobjects(1,3);
@@ -135,10 +134,10 @@ for fi = 1:numel(valueColumns)
                 [],'omitnan');
             topC = max([values.r2Classic(mi),values.r2ClassicSameN(mi)], ...
                 [],'omitnan');
-            add_one_by_five_label(ax,xT,topT,values.nTract(mi));
-            add_one_by_five_label(ax,xC,topC,values.nClassic(mi));
-            add_one_by_five_marker(ax,xT,values.r2TractSameN(mi));
-            add_one_by_five_marker(ax,xC,values.r2ClassicSameN(mi));
+            add_matched_marker(ax,xT,values.r2TractSameN(mi));
+            add_matched_marker(ax,xC,values.r2ClassicSameN(mi));
+            add_sample_label(ax,xT,topT,values.nTract(mi));
+            add_sample_label(ax,xC,topC,values.nClassic(mi));
         end
 
         hold(ax,'off');
@@ -150,12 +149,13 @@ for fi = 1:numel(valueColumns)
             'FontWeight','bold','FontAngle','italic','Interpreter','none');
         xticks(ax,1:numel(metrics));
         xticklabels(ax,metrics);
-        xtickangle(ax,90);
+        xtickangle(ax,0);
         xlim(ax,[0.45,numel(metrics)+0.55]);
         ylim(ax,[0,0.56]);
         yticks(ax,0:0.1:0.5);
+        ylabel(ax,'R²','FontName','Arial','FontSize',8.5,'Interpreter','none');
         if ci == 1
-            ylabel(ax,'R^2', ...
+            ylabel(ax,'R²', ...
                 'FontName','Arial','FontSize',8.5, ...
                 'FontWeight','bold','FontAngle','italic','Interpreter','tex');
             firstAx = ax;
@@ -163,16 +163,15 @@ for fi = 1:numel(valueColumns)
             hold(ax,'on');
             legendHandles(3) = plot(ax,nan,nan,'k-','LineWidth',2.2);
             hold(ax,'off');
-        else
-            yticklabels(ax,{});
         end
     end
 
     lg = legend(firstAx,legendHandles, ...
-        {'Tract-based','Classic','Matched N'}, ...
+        {'Tract-based','Classical','Matched cohort (MS only, joint complete cases)'}, ...
         'Orientation','horizontal','Location','northoutside', ...
         'FontName','Arial','FontSize',7.5,'FontAngle','italic','Box','off');
     lg.Layout.Tile = 'north';
+    xlabel(tl,'MRI metric','FontName','Arial','FontSize',8);
     drawnow;
     set(fig,'Position',[0.5 0.5 figureSize]);
     drawnow;
@@ -191,7 +190,7 @@ end
 outputs = struct( ...
     'figure6',fullfile(outputDir,pdfNames{1}), ...
     'supplementary_figure_s2',fullfile(outputDir,pdfNames{2}), ...
-    'layout','one row by five columns', ...
+    'layout','five rows by one column', ...
     'bar_width',barWidth, ...
     'exported',doExport);
 end
@@ -227,18 +226,20 @@ end
 end
 
 
-function add_one_by_five_label(ax,xValue,topValue,nValue)
+function add_sample_label(ax,xValue,topValue,nValue)
 if isfinite(topValue) && isfinite(nValue)
-    text(ax,xValue,topValue+0.010,sprintf('%d',round(nValue)), ...
-        'HorizontalAlignment','center','FontName','Arial','FontSize',6.5, ...
+    text(ax,xValue,topValue+0.018,sprintf('%d',round(nValue)), ...
+        'HorizontalAlignment','center','VerticalAlignment','bottom','FontName','Arial','FontSize',7.2, ...
         'FontAngle','italic','Color','k');
 end
 end
 
 
-function add_one_by_five_marker(ax,xValue,r2Value)
+function add_matched_marker(ax,xValue,r2Value)
 if isfinite(r2Value)
-    plot(ax,[xValue-0.11,xValue+0.11],[r2Value,r2Value], ...
-        'k-','LineWidth',1.3);
+    plot(ax,[xValue-0.20,xValue+0.20],[r2Value,r2Value], ...
+        'w-','LineWidth',3.4);
+    plot(ax,[xValue-0.20,xValue+0.20],[r2Value,r2Value], ...
+        'k-','LineWidth',1.5);
 end
 end

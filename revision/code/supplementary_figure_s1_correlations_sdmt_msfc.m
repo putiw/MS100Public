@@ -31,7 +31,7 @@ assert(payload.multiple_testing.global_family.multiplier == 182, ...
 
 panels = build_panels(cells);
 pdfPath = fullfile(outputDir, ...
-    'Supplementary_Figure_S1_with_SDMT_MSFC.pdf');
+    'Supplementary_FigureS1.pdf');
 pngPath = fullfile(previewDir, ...
     'Supplementary_Figure_S1_with_SDMT_MSFC.png');
 
@@ -96,59 +96,77 @@ end
 
 
 function render_composite(panels, pdfPath, pngPath)
-% Retain the established S1 dimensions, heatmap, typography and spacing.
-fig = figure('Visible', 'off', 'Color', 'w', 'Units', 'inches', ...
-    'Position', [0.5 0.5 13 11.5], 'PaperUnits', 'inches', ...
-    'PaperSize', [13 11.5], 'PaperPosition', [0 0 13 11.5], ...
-    'DefaultAxesFontName', 'Arial', 'DefaultTextFontName', 'Arial');
-closeFigure = onCleanup(@() close(fig)); %#ok<NASGU>
-layout = tiledlayout(fig, 3, 2, ...
-    'TileSpacing', 'compact', 'Padding', 'loose');
-colormap(fig, flipud(hot(256)));
-
-for panelIndex = 1:numel(panels)
-    panel = panels(panelIndex);
-    ax = nexttile(layout, panelIndex);
-    imagesc(ax, panel.corr_matrix);
-    clim(ax, [0 1]);
-    axis(ax, 'tight');
-    box(ax, 'on');
-    cb = colorbar(ax);
-    cb.FontSize = 7;
-    cb.Label.String = '|partial r|';
-    cb.Label.FontSize = 7;
-    title(ax, [panel.title ' Correlations'], ...
-        'FontSize', 10, 'FontWeight', 'bold', 'Interpreter', 'none');
-    set(ax, 'XTick', 1:numel(panel.clinical_labels), ...
-        'XTickLabel', panel.clinical_labels, ...
-        'YTick', 1:numel(panel.display_names), ...
-        'YTickLabel', panel.display_names, ...
-        'FontSize', 8, 'TickLabelInterpreter', 'none');
-    xtickangle(ax, 27);
-
-    for imagingIndex = 1:size(panel.corr_matrix, 1)
-        for outcomeIndex = 1:size(panel.corr_matrix, 2)
-            r = panel.corr_matrix(imagingIndex, outcomeIndex);
-            if isnan(r), continue; end
-            cellText = sprintf('%.2f', r);
-            if panel.significant(imagingIndex, outcomeIndex)
-                cellText = [cellText '*']; %#ok<AGROW>
-                fontWeight = 'bold';
-            else
-                fontWeight = 'normal';
-            end
-            if r > 0.6, fontColor = 'w'; else, fontColor = 'k'; end
-            text(ax, outcomeIndex, imagingIndex, cellText, ...
-                'HorizontalAlignment', 'center', ...
-                'VerticalAlignment', 'middle', ...
-                'FontSize', 8, 'FontWeight', fontWeight, ...
-                'Color', fontColor);
+% The original six panels and cell values, at their final publication size.
+sizeIn = [169.8 209.8]/25.4;
+fig = figure('Visible','off','Color','w','Units','inches', ...
+    'Position',[.5 .5 sizeIn],'PaperUnits','inches','PaperSize',sizeIn, ...
+    'PaperPosition',[0 0 sizeIn],'DefaultAxesFontName','Arial', ...
+    'DefaultTextFontName','Arial');
+cleanup = onCleanup(@() close(fig)); %#ok<NASGU>
+palette=flipud(hot(256));
+colormap(fig,palette);
+set(fig,'Renderer','painters');
+for pi = 1:6
+    panel = panels(pi);
+    col = mod(pi-1,2); row = floor((pi-1)/2);
+    ax = axes(fig,'Position',[.085+.50*col .745-.295*row .335 .185]);
+    hold(ax,'on');
+    [nr,nc]=size(panel.corr_matrix);
+    for ii=1:nr
+        for jj=1:nc
+            v=panel.corr_matrix(ii,jj);
+            index=min(256,max(1,floor(v*256)+1));
+            patch(ax,jj+[-.5 .5 .5 -.5],ii+[-.5 -.5 .5 .5],palette(index,:), ...
+                'EdgeColor','none');
+        end
+    end
+    set(ax,'YDir','reverse','XLim',[.5 nc+.5],'YLim',[.5 nr+.5]);
+    clim(ax,[0 1]); box(ax,'on');
+    names = panel.display_names;
+    for k=1:numel(names)
+        names{k}=strrep(names{k},'Association','Assoc.');
+        names{k}=strrep(names{k},'Cerebellar','Cereb.');
+        names{k}=strrep(names{k},'Occipitoparietal','Occip.-par.');
+        names{k}=strrep(names{k},'ProjectionBrainstem','Proj.-BS');
+        names{k}=strrep(names{k},'Projection Brainstem','Proj.-BS');
+        names{k}=strrep(names{k},'Periventricular','PV');
+        names{k}=strrep(names{k},'Juxtacortical','JC');
+        names{k}=strrep(names{k},'Infratentorial','IT');
+        names{k}=strrep(names{k},'Deep White Matter','DWM');
+    end
+    set(ax,'XTick',1:numel(panel.clinical_labels),'XTickLabel',panel.clinical_labels, ...
+        'YTick',1:numel(names),'YTickLabel',names,'FontSize',7.2, ...
+        'TickLabelInterpreter','none','TickLength',[0 0]);
+    xtickangle(ax,55);
+    title(ax,panel.title,'FontSize',8,'Interpreter','none');
+    % Vector colour scale: avoid raster heatmaps and image-based colourbars.
+    cb=axes(fig,'Position',[.427+.50*col .745-.295*row .012 .185]);
+    hold(cb,'on');
+    for kk=1:256
+        patch(cb,[0 1 1 0],[(kk-1) (kk-1) kk kk]/256, ...
+            palette(kk,:),'EdgeColor','none');
+    end
+    clim(cb,[0 1]);
+    set(cb,'XLim',[0 1],'YLim',[0 1],'XTick',[], ...
+        'YTick',[0 .5 1],'YAxisLocation','right','FontName','Arial', ...
+        'FontSize',7.2,'TickLength',[0 0],'Box','on');
+    ylabel(cb,'|partial r|','FontSize',7.2);
+    for i=1:size(panel.corr_matrix,1)
+        for j=1:size(panel.corr_matrix,2)
+            v=panel.corr_matrix(i,j); if isnan(v),continue;end
+            label=sprintf('%.2f',v); weight='normal';
+            if panel.significant(i,j),label=[label '*'];weight='bold';end
+            color='k';if v>.6,color='w';end
+            text(ax,j,i,label,'HorizontalAlignment','center','FontSize',7.2, ...
+                'FontWeight',weight,'Color',color);
         end
     end
 end
-
-exportgraphics(fig, pdfPath, 'ContentType', 'vector', ...
-    'BackgroundColor', 'white');
-exportgraphics(fig, pngPath, 'Resolution', 300, ...
-    'BackgroundColor', 'white');
+annotation(fig,'textbox',[.035 .01 .93 .055],'String', ...
+    {'Assoc.: Association; Cereb.: Cerebellar; Occip.-par.: Occipitoparietal; Proj.-BS: Projection/Brainstem', ...
+    'PV: Periventricular; JC: Juxtacortical; IT: Infratentorial; DWM: Deep white matter', ...
+    '* Bonferroni significant (182 tests). Colours and numbers: absolute partial correlation (unitless).'}, ...
+    'FontName','Arial','FontSize',7.2,'EdgeColor','none','Interpreter','none');
+print(fig,pdfPath,'-dpdf','-painters');
+print(fig,pngPath,'-dpng','-r300');
 end

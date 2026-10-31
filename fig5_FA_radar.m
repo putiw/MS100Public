@@ -37,6 +37,7 @@ function fig5_FA_radar(varargin)
     
     % Load configuration
     config = load_config();
+    config.msTypeColors = fig5_palette(); % Figure 5-only accessible palette.
     
     % Get the correct Excel file path from config
     excelFile = fullfile(config.bidsDir, config.statsDir, ...
@@ -223,5 +224,8 @@ function fig5_FA_radar(varargin)
         titleStr = 'FA Values in Lesions and NAWM by MS Type';
     end
     sgtitle(titleStr, 'FontSize', 14);
+    set(fig,'Units','centimeters','Position',[1 1 16.98 20.98], ...
+        'PaperUnits','centimeters','PaperSize',[16.98 20.98], ...
+        'PaperPosition',[0 0 16.98 20.98]);
 end
 
