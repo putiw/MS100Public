@@ -1,0 +1,13 @@
+{
+  "cohort_file": "/path/to/frozen/imaging_cohort.csv",
+  "freesurfer_root": "/path/to/frozen/freesurfer",
+  "transformed_maps": "/path/to/individual-space/NODDI/maps",
+  "clinical_file": "/path/to/clinicalScore.xlsx",
+  "metrics_dir": "/path/to/GroupTract/tables",
+  "classical_file": "/path/to/ClassicalRegionAllMetrics.csv",
+  "baseline_table_gt3": "/path/to/comment14_gt3/results/tables/Supplementary_Table_6.csv",
+  "baseline_table_ge4": "/path/to/revisionExtras/results/tables/Supplementary_Table_6.csv",
+  "matlab_executable": "/path/to/MATLAB/bin/matlab",
+  "work_dir": "/path/outside/public/repository/new_private_work_directory",
+  "workers": 2
+}
