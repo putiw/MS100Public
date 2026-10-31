@@ -37,7 +37,6 @@ function fig5_MD_radar(varargin)
     
     % Load configuration
     config = load_config();
-    config.msTypeColors = fig5_palette(); % Figure 5-only accessible palette.
     
     % Get the correct Excel file path from config
     excelFile = fullfile(config.bidsDir, config.statsDir, ...
