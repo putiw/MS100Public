@@ -1,13 +1,22 @@
 function figure5_publication(aggregateFile,outputDir)
 % Render the frozen original Figure 5 means +/- SEM, without fitting models.
-% aggregateFile is the externally audited figure5_plotted_values_mounted.csv.
+% With no arguments, use the repository-local frozen aggregate input.
+% figure5_publication([], outputDir) writes a separate review export.
 % It contains aggregate-only source summaries; input hashes and subjects were
 % verified against the original GroupTract and icometrix workbooks before use.
 % Tract workbook bytes differ from the mounted audit, but all 133 subject IDs,
 % validity masks and 3,432 plotted subject-feature values agree exactly.
 root=fileparts(fileparts(fileparts(mfilename('fullpath'))));
 addpath(fullfile(root,'helpers'));
-if nargin<2,outputDir=fullfile(root,'revision','results','figures');end
+if nargin<1 || isempty(aggregateFile)
+    aggregateFile=fullfile(root,'revision','results','model_results', ...
+        'figure5_plotted_values.csv');
+end
+if nargin<2 || isempty(outputDir)
+    outputDir=fullfile(root,'revision','results','figures');
+end
+assert(isfile(aggregateFile),'Missing Figure 5 aggregate input: %s',aggregateFile);
+if ~isfolder(outputDir),mkdir(outputDir);end
 D=readtable(aggregateFile,'TextType','string');
 assert(height(D)==160,'Expected 160 original Figure 5 aggregate cells.');
 colors=fig5_palette(); types={'RRMS','SPMS','PPMS','control'};
