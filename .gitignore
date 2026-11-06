@@ -40,5 +40,5 @@ Thumbs.db
 !revisionExtras/comment14_noddi/results/Supplementary_Table_6_EDSS_gt3.csv
 !revisionExtras/comment14_noddi/results/Supplementary_Table_6_EDSS_ge4.csv
 
-# Local manuscript styling and polished outputs (not shared in Git).
-/revision/local_style/
+# Local manuscript styling
+/revision/manuscript_figures/formatting/

@@ -1,9 +1,10 @@
-function figure5_publication(aggregateFile,outputDir)
+function fig = figure5_publication(aggregateFile,outputDir,doExport)
 % Plain MATLAB Figure 5 from tracked aggregate inputs; no manuscript styling.
 root=fileparts(fileparts(mfilename('fullpath')));
 if nargin<1,aggregateFile=[];end
 if nargin<2 || isempty(outputDir),outputDir=fullfile(root,'results','figures');end
-if ~isfolder(outputDir),mkdir(outputDir);end
+if nargin<3,doExport=true;end
+if doExport && ~isfolder(outputDir),mkdir(outputDir);end
 D=load_revision_figure_data('Figure5',aggregateFile);
 metrics={'T1','MTR','FA','MD'};types={'RRMS','SPMS','PPMS','Control'};
 regions={{'periventricular','juxtacortical','infratentorial','deepwhitematter'}, ...
@@ -15,7 +16,11 @@ units={'T1 (seconds)','MTR (%)','FA (unitless)','MD (10^{-3} mm^{2} s^{-1})'};
 sizeIn=[169.8 209.8]/25.4;
 fig=figure('Visible','off','Units','inches','Position',[.5 .5 sizeIn], ...
     'PaperUnits','inches','PaperSize',sizeIn,'PaperPosition',[0 0 sizeIn]);
-cleanup=onCleanup(@()close(fig)); %#ok<NASGU>
+if doExport
+    cleanup=onCleanup(@()close(fig)); %#ok<NASGU>
+else
+    fig.Name='Figure 5';fig.UserData=D;
+end
 for row=1:3
     k=1+(row>1);fw='Tract';if row==1,fw='Classical';end
     tissue='Lesion';if row==3,tissue='NAWM';end
@@ -51,5 +56,9 @@ for row=1:3
         if row==3 && mi==1,legend(ax,h,types,'Location','southoutside','FontSize',8);end
     end
 end
-print(fig,fullfile(outputDir,'Figure5.pdf'),'-dpdf','-painters');
+if doExport
+    print(fig,fullfile(outputDir,'Figure5.pdf'),'-dpdf','-painters');
+else
+    fig.Visible='on';
+end
 end
