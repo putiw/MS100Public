@@ -1,7 +1,7 @@
 function figures = open_figure4()
 % Open the quantitative parts of Figure 4 from aggregate tables only.
 repoDir=fileparts(fileparts(fileparts(fileparts(mfilename('fullpath')))));
-inputDir=fullfile(repoDir,'revisionExtras','osama_followup_20261013','results');
+inputDir=fullfile(repoDir,'revisionExtras','followup_20261013','results');
 barData=readtable(fullfile(inputDir,'figure4a_bar_by_subtype_caption_matched_89.csv'),'TextType','string');
 radarData=readtable(fullfile(inputDir,'lesion_load_by_region_subtype_caption_matched_89.csv'),'TextType','string');
 groups=["RRMS","PPMS","SPMS"];

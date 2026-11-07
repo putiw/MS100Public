@@ -10,7 +10,3 @@ helper/config/input_paths.local.json
 !results/figures/*.pdf
 !results/model_results/*.csv
 !results/tables/*.csv
-!helper/reference_qa/**/*.csv
-!helper/reference_qa/**/*.json
-!helper/reference_qa/**/*.pdf
-!helper/reference_qa/**/*.png

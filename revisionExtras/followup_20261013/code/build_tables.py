@@ -3,9 +3,9 @@
 
 The one row-per-subject export is deliberately written outside the repository.
 All outputs are created exclusively; existing files are never overwritten.
-This is stage 1: only its classical-exclusion table and base private CSV
-feed the current handoff. Its legacy figure summaries/tests are intermediate;
-build_mounted_figure_followup.py produces the final Figure 4/5 deliverables.
+Stage 1 produces the classical-exclusion table and base private CSV.
+Its figure summaries and tests are intermediate outputs.
+build_mounted_figure_followup.py produces the matched Figure 4/5 tables.
 """
 
 from __future__ import annotations

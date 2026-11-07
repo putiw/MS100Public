@@ -48,7 +48,6 @@ The lesion-load sensitivity deliberately uses the frozen canonical Supplementary
 revisionExtras/
   code/                  Portable MATLAB and Python analysis scripts
   helper/config/         Input-path template, dependency pins, and input hashes
-  helper/reference_qa/   Aggregate reference checks and comparison figures
   results/               EDSS ≥4 mirror plus Comment 14 model/table additions
   work/                  Regenerated intermediates and QA; ignored by Git
 ```

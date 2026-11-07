@@ -1,5 +1,7 @@
 # Reviewer-requested Motor analysis
 
+Use [`v1/results/`](v1/results/) for the completed 13-tract Motor analysis.
+
 This package is additive and self-contained. It uses the attached 13-tract
 definition verbatim, records missing components, and never encodes a missing
 component as a zero-valued metric. Subject-level masks and maps belong only in
