@@ -1,51 +1,35 @@
-# NODDI group summaries
+# NODDI group summaries and Figure S3
 
-Aggregate group summaries for tract NDI, ODI and ISOVF (the GroupTract FWF
-field) and Supplementary Figure S3. No participant-level data are written
-here.
+Figure S3 follows the three rows of Figure 5 for NDI, ODI and ISOVF
+(the FWF field). The two lesion rows summarize means within lesion voxels
+for RRMS, SPMS and PPMS. Each region uses its available observations, with
+lesion-free regions recorded as missing. The tract NAWM row also includes
+controls. Fitted zeros are retained and counted.
 
-## Contents
+- `results/Supplementary_Table_NODDI_group_summary.csv` gives N, mean, SD,
+  zero count and Kruskal-Wallis results by framework, tissue, metric and region.
+- `results/Supplementary_Table_NODDI_pairwise.csv` gives two-sided asymptotic
+  Mann-Whitney tests for every group pair.
+- `results/figureS3_plotted_values.csv` gives the plotted means and SEMs
+  in Figure 5's aggregate schema.
+- `results/Supplementary_FigureS3.pdf` is the plain MATLAB export.
 
-- `results/Supplementary_Table_NODDI_group_summary.csv`: N, mean and SD per
-  group, tract cluster and tissue (Tail and NAWM), with the Kruskal-Wallis
-  test for each feature.
-- `results/Supplementary_Table_NODDI_pairwise.csv`: two-sided Mann-Whitney
-  tests for every pair of groups.
-- `results/figureS3_plotted_values.csv`: means and SEMs drawn in Figure S3
-  (lesion mean and NAWM), in the Figure 5 plotted-values format.
-- `results/Supplementary_FigureS3.pdf`: plain MATLAB export of Figure S3.
-
-Tail is the percentile summary used as the tract predictor in the regression
-models: P10 for NDI and P90 for ODI and ISOVF, taken over all voxels of the
-tract cluster. It is not restricted to lesion voxels and is defined for
-controls as well as MS groups. The figure follows Figure 5 and shows the mean
-within lesion voxels (RRMS, SPMS, PPMS) and the mean within NAWM (those
-groups plus controls).
-
-Benjamini-Hochberg correction is applied within this analysis only: one
-family of 24 Kruskal-Wallis tests and one family of 144 pairwise tests.
-Fitted zeros are retained; no cell contains a zero.
+The figure has two Benjamini-Hochberg families, with 36 Kruskal-Wallis
+and 144 pairwise tests. Each panel has its own radial limits, rounded
+outward to 0.01 from the minimum and maximum mean ± SEM.
 
 ## Rebuild
 
-```
-python code/build_noddi_group_summary.py \
-  --metrics-dir <directory with GroupTractFA_All.csv, GroupTractNDI_All.csv,
-                 GroupTractODI_All.csv, GroupTractFWF_All.csv> \
-  --figure5 revision/results/model_results/figure5_plotted_values.csv \
-  --output-dir <empty output directory> \
-  --internal-dir <private directory outside the repository>
-```
+Run `code/build_noddi_group_summary.py` with `--metrics-dir` pointing to
+the `GroupTract{FA,NDI,ODI,FWF}_All.csv`, `ClassicalRegionAllMetrics.csv`
+and `ClassicalRegionNODDI_All.csv` inputs. Pass the frozen Figure 5
+plotted-values CSV with `--figure5`, a fresh aggregate directory with
+`--output-dir` and a private directory with `--internal-dir`.
 
-The script stops before reading NODDI values unless all 28 tract FA cells of
-Figure 5 (N, mean, SD, SEM) are reproduced within 1e-6. NODDI values are
-available for 130 participants, all within the Figure 5 cohort.
+The script checks N, mean, SD and SEM against all 28 tract and 12 classical
+Figure 5 FA cells at a tolerance of 1e-6 before opening the NODDI inputs.
+It records the zero-excluded sensitivity results in the private directory.
 
-Render the figure in MATLAB:
-
-```matlab
-addpath('revisionExtras/noddi_group_summary/code');
-render_supplementary_figure_s3( ...
-  'revisionExtras/noddi_group_summary/results/figureS3_plotted_values.csv', ...
-  fullfile(tempdir, 'Supplementary_FigureS3.pdf'));
-```
+Add `code/` to the MATLAB path and call
+`render_supplementary_figure_s3(plottedCsv, outputPdf)` with the aggregate
+plotted-values CSV and a new PDF path.
