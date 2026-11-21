@@ -1,0 +1,344 @@
+metric,outcome,model,n_pred,N,pos,measure,apparent,cv,cv_sd_across_repeats,optimism,ci_lo,ci_hi
+T1,EDSS>=4,tract16,16.0,80,31.0,AUC,0.913,0.823,0.016,0.09,,
+T1,EDSS>=4,classical4,4.0,80,31.0,AUC,0.791,0.752,0.012,0.039,,
+T1,EDSS>=4,tract4_tail,4.0,80,31.0,AUC,0.856,0.814,0.01,0.042,,
+T1,EDSS>=4,tract8_tail,8.0,80,31.0,AUC,0.876,0.813,0.011,0.063,,
+T1,EDSS>=4,DELTA tract16 - classical4,,80,,cvAUC diff,,0.08,,,-0.028,0.199
+T1,EDSS>=4,DELTA tract4_tail - classical4,,80,,cvAUC diff,,0.061,,,-0.044,0.172
+T1,EDSS>=4,DELTA tract8_tail - classical4,,80,,cvAUC diff,,0.07,,,-0.035,0.183
+T1,MSPro>=2,tract16,16.0,79,39.0,AUC,0.863,0.749,0.014,0.114,,
+T1,MSPro>=2,classical4,4.0,79,39.0,AUC,0.826,0.775,0.011,0.051,,
+T1,MSPro>=2,tract4_tail,4.0,79,39.0,AUC,0.831,0.774,0.016,0.057,,
+T1,MSPro>=2,tract8_tail,8.0,79,39.0,AUC,0.871,0.765,0.019,0.105,,
+T1,MSPro>=2,DELTA tract16 - classical4,,79,,cvAUC diff,,-0.02,,,-0.14,0.097
+T1,MSPro>=2,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.0,,,-0.117,0.112
+T1,MSPro>=2,DELTA tract8_tail - classical4,,79,,cvAUC diff,,-0.004,,,-0.128,0.113
+T1,T25FW,tract16,16.0,76,,R2,0.235,0.142,0.022,0.093,,
+T1,T25FW,classical4,4.0,76,,R2,0.192,0.136,0.01,0.057,,
+T1,T25FW,tract4_tail,4.0,76,,R2,0.233,0.151,0.025,0.082,,
+T1,T25FW,tract8_tail,8.0,76,,R2,0.231,0.146,0.023,0.085,,
+T1,T25FW,DELTA tract16 - classical4,,76,,cvR2 diff,,0.008,,,-0.116,0.149
+T1,T25FW,DELTA tract4_tail - classical4,,76,,cvR2 diff,,0.02,,,-0.115,0.185
+T1,T25FW,DELTA tract8_tail - classical4,,76,,cvR2 diff,,0.013,,,-0.104,0.16
+T1,9HPT-D,tract16,16.0,79,,R2,0.139,0.063,0.019,0.076,,
+T1,9HPT-D,classical4,4.0,79,,R2,0.126,0.075,0.01,0.051,,
+T1,9HPT-D,tract4_tail,4.0,79,,R2,0.131,0.085,0.011,0.046,,
+T1,9HPT-D,tract8_tail,8.0,79,,R2,0.149,0.087,0.011,0.062,,
+T1,9HPT-D,DELTA tract16 - classical4,,79,,cvR2 diff,,-0.011,,,-0.106,0.106
+T1,9HPT-D,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.012,,,-0.083,0.126
+T1,9HPT-D,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.013,,,-0.08,0.134
+T1,9HPT-ND,tract16,16.0,79,,R2,0.366,0.289,0.014,0.077,,
+T1,9HPT-ND,classical4,4.0,79,,R2,0.194,0.118,0.019,0.077,,
+T1,9HPT-ND,tract4_tail,4.0,79,,R2,0.352,0.309,0.013,0.043,,
+T1,9HPT-ND,tract8_tail,8.0,79,,R2,0.346,0.298,0.011,0.048,,
+T1,9HPT-ND,DELTA tract16 - classical4,,79,,cvR2 diff,,0.176,,,0.049,0.35
+T1,9HPT-ND,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.198,,,0.048,0.395
+T1,9HPT-ND,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.183,,,0.049,0.376
+T1,SDMT,tract16,16.0,80,,R2,0.387,0.28,0.025,0.107,,
+T1,SDMT,classical4,4.0,80,,R2,0.199,0.136,0.015,0.063,,
+T1,SDMT,tract4_tail,4.0,80,,R2,0.37,0.312,0.015,0.058,,
+T1,SDMT,tract8_tail,8.0,80,,R2,0.394,0.313,0.018,0.081,,
+T1,SDMT,DELTA tract16 - classical4,,80,,cvR2 diff,,0.151,,,0.005,0.28
+T1,SDMT,DELTA tract4_tail - classical4,,80,,cvR2 diff,,0.179,,,0.04,0.308
+T1,SDMT,DELTA tract8_tail - classical4,,80,,cvR2 diff,,0.181,,,0.042,0.31
+T1,MSFC-SDMT,tract16,16.0,75,,R2,0.322,0.234,0.018,0.088,,
+T1,MSFC-SDMT,classical4,4.0,75,,R2,0.217,0.153,0.014,0.063,,
+T1,MSFC-SDMT,tract4_tail,4.0,75,,R2,0.329,0.279,0.014,0.05,,
+T1,MSFC-SDMT,tract8_tail,8.0,75,,R2,0.336,0.267,0.015,0.069,,
+T1,MSFC-SDMT,DELTA tract16 - classical4,,75,,cvR2 diff,,0.083,,,-0.057,0.265
+T1,MSFC-SDMT,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.128,,,-0.02,0.312
+T1,MSFC-SDMT,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.116,,,-0.032,0.3
+MTR,EDSS>=4,tract16,16.0,80,31.0,AUC,0.874,0.832,0.01,0.042,,
+MTR,EDSS>=4,classical4,4.0,80,31.0,AUC,0.685,0.619,0.017,0.067,,
+MTR,EDSS>=4,tract4_tail,4.0,80,31.0,AUC,0.861,0.83,0.009,0.031,,
+MTR,EDSS>=4,tract8_tail,8.0,80,31.0,AUC,0.87,0.828,0.008,0.042,,
+MTR,EDSS>=4,DELTA tract16 - classical4,,80,,cvAUC diff,,0.217,,,0.091,0.348
+MTR,EDSS>=4,DELTA tract4_tail - classical4,,80,,cvAUC diff,,0.215,,,0.101,0.34
+MTR,EDSS>=4,DELTA tract8_tail - classical4,,80,,cvAUC diff,,0.215,,,0.097,0.343
+MTR,MSPro>=2,tract16,16.0,79,39.0,AUC,0.878,0.787,0.015,0.091,,
+MTR,MSPro>=2,classical4,4.0,79,39.0,AUC,0.685,0.571,0.027,0.114,,
+MTR,MSPro>=2,tract4_tail,4.0,79,39.0,AUC,0.872,0.831,0.014,0.042,,
+MTR,MSPro>=2,tract8_tail,8.0,79,39.0,AUC,0.865,0.797,0.016,0.068,,
+MTR,MSPro>=2,DELTA tract16 - classical4,,79,,cvAUC diff,,0.216,,,0.097,0.336
+MTR,MSPro>=2,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.25,,,0.133,0.367
+MTR,MSPro>=2,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.217,,,0.098,0.341
+MTR,T25FW,tract16,16.0,76,,R2,0.265,0.188,0.019,0.076,,
+MTR,T25FW,classical4,4.0,76,,R2,0.053,-0.006,0.019,0.059,,
+MTR,T25FW,tract4_tail,4.0,76,,R2,0.245,0.187,0.018,0.058,,
+MTR,T25FW,tract8_tail,8.0,76,,R2,0.265,0.186,0.027,0.079,,
+MTR,T25FW,DELTA tract16 - classical4,,76,,cvR2 diff,,0.198,,,0.067,0.369
+MTR,T25FW,DELTA tract4_tail - classical4,,76,,cvR2 diff,,0.198,,,0.057,0.375
+MTR,T25FW,DELTA tract8_tail - classical4,,76,,cvR2 diff,,0.204,,,0.049,0.391
+MTR,9HPT-D,tract16,16.0,79,,R2,0.132,0.067,0.02,0.065,,
+MTR,9HPT-D,classical4,4.0,79,,R2,0.11,0.048,0.015,0.062,,
+MTR,9HPT-D,tract4_tail,4.0,79,,R2,0.131,0.074,0.023,0.057,,
+MTR,9HPT-D,tract8_tail,8.0,79,,R2,0.134,0.072,0.02,0.062,,
+MTR,9HPT-D,DELTA tract16 - classical4,,79,,cvR2 diff,,0.018,,,-0.102,0.129
+MTR,9HPT-D,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.028,,,-0.089,0.141
+MTR,9HPT-D,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.023,,,-0.086,0.137
+MTR,9HPT-ND,tract16,16.0,79,,R2,0.367,0.324,0.009,0.043,,
+MTR,9HPT-ND,classical4,4.0,79,,R2,0.176,0.099,0.014,0.076,,
+MTR,9HPT-ND,tract4_tail,4.0,79,,R2,0.381,0.339,0.008,0.043,,
+MTR,9HPT-ND,tract8_tail,8.0,79,,R2,0.372,0.331,0.008,0.041,,
+MTR,9HPT-ND,DELTA tract16 - classical4,,79,,cvR2 diff,,0.224,,,0.095,0.421
+MTR,9HPT-ND,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.24,,,0.105,0.436
+MTR,9HPT-ND,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.231,,,0.098,0.425
+MTR,SDMT,tract16,16.0,80,,R2,0.35,0.264,0.016,0.085,,
+MTR,SDMT,classical4,4.0,80,,R2,0.113,0.037,0.019,0.076,,
+MTR,SDMT,tract4_tail,4.0,80,,R2,0.336,0.275,0.018,0.061,,
+MTR,SDMT,tract8_tail,8.0,80,,R2,0.345,0.27,0.018,0.075,,
+MTR,SDMT,DELTA tract16 - classical4,,80,,cvR2 diff,,0.229,,,0.081,0.351
+MTR,SDMT,DELTA tract4_tail - classical4,,80,,cvR2 diff,,0.24,,,0.093,0.36
+MTR,SDMT,DELTA tract8_tail - classical4,,80,,cvR2 diff,,0.234,,,0.093,0.349
+MTR,MSFC-SDMT,tract16,16.0,75,,R2,0.337,0.275,0.012,0.062,,
+MTR,MSFC-SDMT,classical4,4.0,75,,R2,0.145,0.065,0.018,0.081,,
+MTR,MSFC-SDMT,tract4_tail,4.0,75,,R2,0.342,0.295,0.01,0.047,,
+MTR,MSFC-SDMT,tract8_tail,8.0,75,,R2,0.346,0.29,0.014,0.055,,
+MTR,MSFC-SDMT,DELTA tract16 - classical4,,75,,cvR2 diff,,0.21,,,0.09,0.364
+MTR,MSFC-SDMT,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.232,,,0.105,0.394
+MTR,MSFC-SDMT,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.226,,,0.103,0.386
+FA,EDSS>=4,tract16,16.0,79,31.0,AUC,0.812,0.744,0.016,0.068,,
+FA,EDSS>=4,classical4,4.0,79,31.0,AUC,0.59,0.432,0.039,0.158,,
+FA,EDSS>=4,tract4_tail,4.0,79,31.0,AUC,0.784,0.743,0.013,0.041,,
+FA,EDSS>=4,tract8_tail,8.0,79,31.0,AUC,0.784,0.732,0.013,0.052,,
+FA,EDSS>=4,DELTA tract16 - classical4,,79,,cvAUC diff,,0.501,,,0.321,0.673
+FA,EDSS>=4,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.497,,,0.321,0.667
+FA,EDSS>=4,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.492,,,0.317,0.663
+FA,MSPro>=2,tract16,16.0,78,39.0,AUC,0.834,0.726,0.022,0.107,,
+FA,MSPro>=2,classical4,4.0,78,39.0,AUC,0.569,0.398,0.04,0.171,,
+FA,MSPro>=2,tract4_tail,4.0,78,39.0,AUC,0.803,0.737,0.015,0.067,,
+FA,MSPro>=2,tract8_tail,8.0,78,39.0,AUC,0.795,0.719,0.016,0.076,,
+FA,MSPro>=2,DELTA tract16 - classical4,,78,,cvAUC diff,,0.428,,,0.26,0.583
+FA,MSPro>=2,DELTA tract4_tail - classical4,,78,,cvAUC diff,,0.438,,,0.277,0.598
+FA,MSPro>=2,DELTA tract8_tail - classical4,,78,,cvAUC diff,,0.419,,,0.256,0.583
+FA,T25FW,tract16,16.0,75,,R2,0.22,0.102,0.026,0.118,,
+FA,T25FW,classical4,4.0,75,,R2,0.012,-0.005,0.007,0.017,,
+FA,T25FW,tract4_tail,4.0,75,,R2,0.2,0.115,0.021,0.085,,
+FA,T25FW,tract8_tail,8.0,75,,R2,0.186,0.088,0.024,0.098,,
+FA,T25FW,DELTA tract16 - classical4,,75,,cvR2 diff,,0.114,,,-0.036,0.305
+FA,T25FW,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.128,,,-0.021,0.318
+FA,T25FW,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.1,,,-0.029,0.268
+FA,9HPT-D,tract16,16.0,78,,R2,0.185,0.077,0.031,0.108,,
+FA,9HPT-D,classical4,4.0,78,,R2,0.019,-0.005,0.009,0.024,,
+FA,9HPT-D,tract4_tail,4.0,78,,R2,0.123,0.052,0.019,0.072,,
+FA,9HPT-D,tract8_tail,8.0,78,,R2,0.141,0.019,0.037,0.122,,
+FA,9HPT-D,DELTA tract16 - classical4,,78,,cvR2 diff,,0.092,,,-0.048,0.266
+FA,9HPT-D,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.064,,,-0.028,0.176
+FA,9HPT-D,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.034,,,-0.073,0.167
+FA,9HPT-ND,tract16,16.0,78,,R2,0.495,0.305,0.026,0.189,,
+FA,9HPT-ND,classical4,4.0,78,,R2,0.033,-0.012,0.016,0.045,,
+FA,9HPT-ND,tract4_tail,4.0,78,,R2,0.278,0.225,0.016,0.053,,
+FA,9HPT-ND,tract8_tail,8.0,78,,R2,0.384,0.236,0.027,0.149,,
+FA,9HPT-ND,DELTA tract16 - classical4,,78,,cvR2 diff,,0.337,,,0.172,0.544
+FA,9HPT-ND,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.245,,,0.084,0.443
+FA,9HPT-ND,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.265,,,0.087,0.459
+FA,SDMT,tract16,16.0,79,,R2,0.414,0.228,0.033,0.186,,
+FA,SDMT,classical4,4.0,79,,R2,0.035,-0.014,0.012,0.049,,
+FA,SDMT,tract4_tail,4.0,79,,R2,0.27,0.211,0.011,0.059,,
+FA,SDMT,tract8_tail,8.0,79,,R2,0.316,0.205,0.017,0.111,,
+FA,SDMT,DELTA tract16 - classical4,,79,,cvR2 diff,,0.263,,,0.097,0.402
+FA,SDMT,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.232,,,0.091,0.356
+FA,SDMT,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.23,,,0.072,0.371
+FA,MSFC-SDMT,tract16,16.0,74,,R2,0.303,0.199,0.036,0.104,,
+FA,MSFC-SDMT,classical4,4.0,74,,R2,0.023,-0.006,0.007,0.029,,
+FA,MSFC-SDMT,tract4_tail,4.0,74,,R2,0.243,0.184,0.021,0.059,,
+FA,MSFC-SDMT,tract8_tail,8.0,74,,R2,0.237,0.141,0.046,0.096,,
+FA,MSFC-SDMT,DELTA tract16 - classical4,,74,,cvR2 diff,,0.219,,,-0.007,0.456
+FA,MSFC-SDMT,DELTA tract4_tail - classical4,,74,,cvR2 diff,,0.199,,,0.032,0.393
+FA,MSFC-SDMT,DELTA tract8_tail - classical4,,74,,cvR2 diff,,0.159,,,-0.027,0.366
+MD,EDSS>=4,tract16,16.0,79,31.0,AUC,0.85,0.791,0.016,0.06,,
+MD,EDSS>=4,classical4,4.0,79,31.0,AUC,0.787,0.729,0.016,0.058,,
+MD,EDSS>=4,tract4_tail,4.0,79,31.0,AUC,0.827,0.785,0.014,0.042,,
+MD,EDSS>=4,tract8_tail,8.0,79,31.0,AUC,0.845,0.794,0.016,0.051,,
+MD,EDSS>=4,DELTA tract16 - classical4,,79,,cvAUC diff,,0.054,,,-0.054,0.151
+MD,EDSS>=4,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.049,,,-0.038,0.135
+MD,EDSS>=4,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.058,,,-0.034,0.145
+MD,MSPro>=2,tract16,16.0,78,39.0,AUC,0.895,0.783,0.017,0.112,,
+MD,MSPro>=2,classical4,4.0,78,39.0,AUC,0.737,0.663,0.018,0.074,,
+MD,MSPro>=2,tract4_tail,4.0,78,39.0,AUC,0.813,0.764,0.012,0.048,,
+MD,MSPro>=2,tract8_tail,8.0,78,39.0,AUC,0.831,0.769,0.011,0.062,,
+MD,MSPro>=2,DELTA tract16 - classical4,,78,,cvAUC diff,,0.127,,,0.03,0.234
+MD,MSPro>=2,DELTA tract4_tail - classical4,,78,,cvAUC diff,,0.101,,,0.008,0.203
+MD,MSPro>=2,DELTA tract8_tail - classical4,,78,,cvAUC diff,,0.103,,,0.012,0.204
+MD,T25FW,tract16,16.0,75,,R2,0.261,0.14,0.031,0.121,,
+MD,T25FW,classical4,4.0,75,,R2,0.132,0.045,0.022,0.087,,
+MD,T25FW,tract4_tail,4.0,75,,R2,0.238,0.122,0.029,0.116,,
+MD,T25FW,tract8_tail,8.0,75,,R2,0.267,0.159,0.025,0.109,,
+MD,T25FW,DELTA tract16 - classical4,,75,,cvR2 diff,,0.095,,,-0.057,0.289
+MD,T25FW,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.077,,,-0.064,0.258
+MD,T25FW,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.113,,,-0.022,0.291
+MD,9HPT-D,tract16,16.0,78,,R2,0.13,0.065,0.011,0.065,,
+MD,9HPT-D,classical4,4.0,78,,R2,0.14,0.032,0.023,0.108,,
+MD,9HPT-D,tract4_tail,4.0,78,,R2,0.113,0.06,0.012,0.053,,
+MD,9HPT-D,tract8_tail,8.0,78,,R2,0.135,0.07,0.011,0.065,,
+MD,9HPT-D,DELTA tract16 - classical4,,78,,cvR2 diff,,0.029,,,-0.054,0.153
+MD,9HPT-D,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.023,,,-0.062,0.149
+MD,9HPT-D,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.033,,,-0.05,0.154
+MD,9HPT-ND,tract16,16.0,78,,R2,0.361,0.278,0.02,0.083,,
+MD,9HPT-ND,classical4,4.0,78,,R2,0.187,0.124,0.021,0.063,,
+MD,9HPT-ND,tract4_tail,4.0,78,,R2,0.341,0.294,0.011,0.047,,
+MD,9HPT-ND,tract8_tail,8.0,78,,R2,0.342,0.282,0.017,0.059,,
+MD,9HPT-ND,DELTA tract16 - classical4,,78,,cvR2 diff,,0.162,,,0.039,0.347
+MD,9HPT-ND,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.173,,,0.052,0.356
+MD,9HPT-ND,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.161,,,0.041,0.339
+MD,SDMT,tract16,16.0,79,,R2,0.324,0.244,0.015,0.079,,
+MD,SDMT,classical4,4.0,79,,R2,0.232,0.15,0.023,0.083,,
+MD,SDMT,tract4_tail,4.0,79,,R2,0.327,0.272,0.012,0.055,,
+MD,SDMT,tract8_tail,8.0,79,,R2,0.344,0.266,0.017,0.077,,
+MD,SDMT,DELTA tract16 - classical4,,79,,cvR2 diff,,0.096,,,-0.012,0.199
+MD,SDMT,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.123,,,0.019,0.22
+MD,SDMT,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.119,,,0.013,0.215
+MD,MSFC-SDMT,tract16,16.0,74,,R2,0.328,0.239,0.018,0.089,,
+MD,MSFC-SDMT,classical4,4.0,74,,R2,0.18,0.072,0.025,0.107,,
+MD,MSFC-SDMT,tract4_tail,4.0,74,,R2,0.311,0.237,0.018,0.074,,
+MD,MSFC-SDMT,tract8_tail,8.0,74,,R2,0.34,0.262,0.014,0.078,,
+MD,MSFC-SDMT,DELTA tract16 - classical4,,74,,cvR2 diff,,0.167,,,0.014,0.362
+MD,MSFC-SDMT,DELTA tract4_tail - classical4,,74,,cvR2 diff,,0.165,,,0.027,0.341
+MD,MSFC-SDMT,DELTA tract8_tail - classical4,,74,,cvR2 diff,,0.19,,,0.053,0.364
+NDI,EDSS>=4,tract16,16.0,79,31.0,AUC,0.913,0.831,0.012,0.081,,
+NDI,EDSS>=4,classical4,4.0,79,31.0,AUC,0.845,0.79,0.012,0.056,,
+NDI,EDSS>=4,tract4_tail,4.0,79,31.0,AUC,0.839,0.808,0.009,0.031,,
+NDI,EDSS>=4,tract8_tail,8.0,79,31.0,AUC,0.865,0.817,0.01,0.048,,
+NDI,EDSS>=4,DELTA tract16 - classical4,,79,,cvAUC diff,,0.048,,,-0.043,0.133
+NDI,EDSS>=4,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.021,,,-0.058,0.093
+NDI,EDSS>=4,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.031,,,-0.054,0.11
+NDI,MSPro>=2,tract16,16.0,78,39.0,AUC,0.777,0.68,0.019,0.097,,
+NDI,MSPro>=2,classical4,4.0,78,39.0,AUC,0.748,0.668,0.023,0.08,,
+NDI,MSPro>=2,tract4_tail,4.0,78,39.0,AUC,0.744,0.7,0.014,0.045,,
+NDI,MSPro>=2,tract8_tail,8.0,78,39.0,AUC,0.743,0.69,0.014,0.053,,
+NDI,MSPro>=2,DELTA tract16 - classical4,,78,,cvAUC diff,,0.001,,,-0.114,0.115
+NDI,MSPro>=2,DELTA tract4_tail - classical4,,78,,cvAUC diff,,0.022,,,-0.088,0.139
+NDI,MSPro>=2,DELTA tract8_tail - classical4,,78,,cvAUC diff,,0.009,,,-0.101,0.126
+NDI,T25FW,tract16,16.0,75,,R2,0.178,0.081,0.035,0.097,,
+NDI,T25FW,classical4,4.0,75,,R2,0.067,-0.028,0.037,0.096,,
+NDI,T25FW,tract4_tail,4.0,75,,R2,0.18,0.097,0.029,0.083,,
+NDI,T25FW,tract8_tail,8.0,75,,R2,0.194,0.106,0.027,0.088,,
+NDI,T25FW,DELTA tract16 - classical4,,75,,cvR2 diff,,0.106,,,-0.01,0.215
+NDI,T25FW,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.122,,,0.022,0.231
+NDI,T25FW,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.131,,,0.025,0.245
+NDI,9HPT-D,tract16,16.0,78,,R2,0.214,0.107,0.023,0.107,,
+NDI,9HPT-D,classical4,4.0,78,,R2,0.129,0.033,0.024,0.097,,
+NDI,9HPT-D,tract4_tail,4.0,78,,R2,0.186,0.109,0.015,0.076,,
+NDI,9HPT-D,tract8_tail,8.0,78,,R2,0.26,0.138,0.023,0.122,,
+NDI,9HPT-D,DELTA tract16 - classical4,,78,,cvR2 diff,,0.071,,,-0.042,0.161
+NDI,9HPT-D,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.072,,,-0.028,0.155
+NDI,9HPT-D,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.109,,,-0.016,0.213
+NDI,9HPT-ND,tract16,16.0,78,,R2,0.378,0.258,0.025,0.119,,
+NDI,9HPT-ND,classical4,4.0,78,,R2,0.242,0.155,0.026,0.087,,
+NDI,9HPT-ND,tract4_tail,4.0,78,,R2,0.34,0.288,0.01,0.052,,
+NDI,9HPT-ND,tract8_tail,8.0,78,,R2,0.36,0.288,0.014,0.072,,
+NDI,9HPT-ND,DELTA tract16 - classical4,,78,,cvR2 diff,,0.104,,,-0.016,0.28
+NDI,9HPT-ND,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.128,,,0.002,0.31
+NDI,9HPT-ND,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.129,,,0.008,0.303
+NDI,SDMT,tract16,16.0,79,,R2,0.393,0.285,0.014,0.108,,
+NDI,SDMT,classical4,4.0,79,,R2,0.155,0.044,0.053,0.111,,
+NDI,SDMT,tract4_tail,4.0,79,,R2,0.339,0.274,0.017,0.065,,
+NDI,SDMT,tract8_tail,8.0,79,,R2,0.399,0.285,0.017,0.115,,
+NDI,SDMT,DELTA tract16 - classical4,,79,,cvR2 diff,,0.235,,,0.108,0.357
+NDI,SDMT,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.223,,,0.093,0.347
+NDI,SDMT,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.237,,,0.106,0.36
+NDI,MSFC-SDMT,tract16,16.0,74,,R2,0.332,0.231,0.035,0.101,,
+NDI,MSFC-SDMT,classical4,4.0,74,,R2,0.141,0.023,0.039,0.118,,
+NDI,MSFC-SDMT,tract4_tail,4.0,74,,R2,0.294,0.232,0.013,0.061,,
+NDI,MSFC-SDMT,tract8_tail,8.0,74,,R2,0.346,0.245,0.025,0.101,,
+NDI,MSFC-SDMT,DELTA tract16 - classical4,,74,,cvR2 diff,,0.199,,,0.112,0.304
+NDI,MSFC-SDMT,DELTA tract4_tail - classical4,,74,,cvR2 diff,,0.197,,,0.114,0.297
+NDI,MSFC-SDMT,DELTA tract8_tail - classical4,,74,,cvR2 diff,,0.216,,,0.125,0.328
+ODI,EDSS>=4,tract16,16.0,79,31.0,AUC,0.84,0.72,0.017,0.12,,
+ODI,EDSS>=4,classical4,4.0,79,31.0,AUC,0.63,0.485,0.038,0.144,,
+ODI,EDSS>=4,tract4_tail,4.0,79,31.0,AUC,0.745,0.681,0.016,0.065,,
+ODI,EDSS>=4,tract8_tail,8.0,79,31.0,AUC,0.792,0.69,0.02,0.102,,
+ODI,EDSS>=4,DELTA tract16 - classical4,,79,,cvAUC diff,,0.245,,,0.085,0.399
+ODI,EDSS>=4,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.204,,,0.035,0.374
+ODI,EDSS>=4,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.212,,,0.042,0.38
+ODI,MSPro>=2,tract16,16.0,78,39.0,AUC,0.834,0.725,0.023,0.109,,
+ODI,MSPro>=2,classical4,4.0,78,39.0,AUC,0.624,0.493,0.036,0.131,,
+ODI,MSPro>=2,tract4_tail,4.0,78,39.0,AUC,0.786,0.704,0.016,0.082,,
+ODI,MSPro>=2,tract8_tail,8.0,78,39.0,AUC,0.796,0.701,0.019,0.095,,
+ODI,MSPro>=2,DELTA tract16 - classical4,,78,,cvAUC diff,,0.275,,,0.126,0.428
+ODI,MSPro>=2,DELTA tract4_tail - classical4,,78,,cvAUC diff,,0.245,,,0.089,0.404
+ODI,MSPro>=2,DELTA tract8_tail - classical4,,78,,cvAUC diff,,0.249,,,0.093,0.407
+ODI,T25FW,tract16,16.0,75,,R2,0.158,0.032,0.022,0.126,,
+ODI,T25FW,classical4,4.0,75,,R2,0.006,-0.007,0.007,0.013,,
+ODI,T25FW,tract4_tail,4.0,75,,R2,0.117,0.026,0.02,0.091,,
+ODI,T25FW,tract8_tail,8.0,75,,R2,0.132,0.022,0.021,0.109,,
+ODI,T25FW,DELTA tract16 - classical4,,75,,cvR2 diff,,0.044,,,-0.041,0.139
+ODI,T25FW,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.038,,,-0.043,0.11
+ODI,T25FW,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.034,,,-0.042,0.107
+ODI,9HPT-D,tract16,16.0,78,,R2,0.166,0.036,0.034,0.13,,
+ODI,9HPT-D,classical4,4.0,78,,R2,0.087,-0.007,0.022,0.094,,
+ODI,9HPT-D,tract4_tail,4.0,78,,R2,0.09,0.02,0.016,0.07,,
+ODI,9HPT-D,tract8_tail,8.0,78,,R2,0.117,0.022,0.014,0.096,,
+ODI,9HPT-D,DELTA tract16 - classical4,,78,,cvR2 diff,,0.041,,,-0.062,0.175
+ODI,9HPT-D,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.023,,,-0.06,0.104
+ODI,9HPT-D,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.023,,,-0.056,0.106
+ODI,9HPT-ND,tract16,16.0,78,,R2,0.399,0.242,0.032,0.156,,
+ODI,9HPT-ND,classical4,4.0,78,,R2,0.117,0.053,0.015,0.064,,
+ODI,9HPT-ND,tract4_tail,4.0,78,,R2,0.221,0.143,0.022,0.078,,
+ODI,9HPT-ND,tract8_tail,8.0,78,,R2,0.288,0.169,0.026,0.119,,
+ODI,9HPT-ND,DELTA tract16 - classical4,,78,,cvR2 diff,,0.201,,,0.008,0.438
+ODI,9HPT-ND,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.094,,,-0.077,0.282
+ODI,9HPT-ND,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.123,,,-0.061,0.342
+ODI,SDMT,tract16,16.0,79,,R2,0.344,0.182,0.02,0.161,,
+ODI,SDMT,classical4,4.0,79,,R2,0.097,0.001,0.024,0.095,,
+ODI,SDMT,tract4_tail,4.0,79,,R2,0.168,0.091,0.016,0.077,,
+ODI,SDMT,tract8_tail,8.0,79,,R2,0.235,0.102,0.022,0.133,,
+ODI,SDMT,DELTA tract16 - classical4,,79,,cvR2 diff,,0.187,,,0.027,0.352
+ODI,SDMT,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.089,,,-0.04,0.228
+ODI,SDMT,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.105,,,-0.043,0.262
+ODI,MSFC-SDMT,tract16,16.0,74,,R2,0.255,0.106,0.029,0.149,,
+ODI,MSFC-SDMT,classical4,4.0,74,,R2,0.052,-0.026,0.019,0.078,,
+ODI,MSFC-SDMT,tract4_tail,4.0,74,,R2,0.147,0.065,0.015,0.082,,
+ODI,MSFC-SDMT,tract8_tail,8.0,74,,R2,0.2,0.074,0.02,0.127,,
+ODI,MSFC-SDMT,DELTA tract16 - classical4,,74,,cvR2 diff,,0.142,,,0.011,0.306
+ODI,MSFC-SDMT,DELTA tract4_tail - classical4,,74,,cvR2 diff,,0.094,,,0.002,0.181
+ODI,MSFC-SDMT,DELTA tract8_tail - classical4,,74,,cvR2 diff,,0.107,,,-0.008,0.214
+FWF,EDSS>=4,tract16,16.0,79,31.0,AUC,0.814,0.715,0.017,0.098,,
+FWF,EDSS>=4,classical4,4.0,79,31.0,AUC,0.702,0.625,0.022,0.076,,
+FWF,EDSS>=4,tract4_tail,4.0,79,31.0,AUC,0.774,0.738,0.01,0.035,,
+FWF,EDSS>=4,tract8_tail,8.0,79,31.0,AUC,0.794,0.741,0.01,0.053,,
+FWF,EDSS>=4,DELTA tract16 - classical4,,79,,cvAUC diff,,0.092,,,-0.018,0.215
+FWF,EDSS>=4,DELTA tract4_tail - classical4,,79,,cvAUC diff,,0.12,,,0.009,0.24
+FWF,EDSS>=4,DELTA tract8_tail - classical4,,79,,cvAUC diff,,0.121,,,0.011,0.241
+FWF,MSPro>=2,tract16,16.0,78,39.0,AUC,0.865,0.78,0.016,0.085,,
+FWF,MSPro>=2,classical4,4.0,78,39.0,AUC,0.792,0.74,0.011,0.051,,
+FWF,MSPro>=2,tract4_tail,4.0,78,39.0,AUC,0.833,0.786,0.011,0.047,,
+FWF,MSPro>=2,tract8_tail,8.0,78,39.0,AUC,0.844,0.785,0.014,0.058,,
+FWF,MSPro>=2,DELTA tract16 - classical4,,78,,cvAUC diff,,0.042,,,-0.082,0.168
+FWF,MSPro>=2,DELTA tract4_tail - classical4,,78,,cvAUC diff,,0.046,,,-0.078,0.174
+FWF,MSPro>=2,DELTA tract8_tail - classical4,,78,,cvAUC diff,,0.047,,,-0.075,0.169
+FWF,T25FW,tract16,16.0,75,,R2,0.204,0.064,0.037,0.14,,
+FWF,T25FW,classical4,4.0,75,,R2,0.097,0.02,0.016,0.077,,
+FWF,T25FW,tract4_tail,4.0,75,,R2,0.213,0.108,0.027,0.105,,
+FWF,T25FW,tract8_tail,8.0,75,,R2,0.233,0.121,0.027,0.113,,
+FWF,T25FW,DELTA tract16 - classical4,,75,,cvR2 diff,,0.05,,,-0.071,0.193
+FWF,T25FW,DELTA tract4_tail - classical4,,75,,cvR2 diff,,0.09,,,-0.052,0.248
+FWF,T25FW,DELTA tract8_tail - classical4,,75,,cvR2 diff,,0.103,,,-0.028,0.253
+FWF,9HPT-D,tract16,16.0,78,,R2,0.213,0.007,0.031,0.207,,
+FWF,9HPT-D,classical4,4.0,78,,R2,0.071,-0.015,0.018,0.086,,
+FWF,9HPT-D,tract4_tail,4.0,78,,R2,0.087,0.021,0.019,0.066,,
+FWF,9HPT-D,tract8_tail,8.0,78,,R2,0.098,0.022,0.017,0.076,,
+FWF,9HPT-D,DELTA tract16 - classical4,,78,,cvR2 diff,,0.052,,,-0.015,0.142
+FWF,9HPT-D,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.035,,,-0.022,0.113
+FWF,9HPT-D,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.037,,,-0.017,0.108
+FWF,9HPT-ND,tract16,16.0,78,,R2,0.379,0.212,0.038,0.167,,
+FWF,9HPT-ND,classical4,4.0,78,,R2,0.174,0.101,0.019,0.073,,
+FWF,9HPT-ND,tract4_tail,4.0,78,,R2,0.267,0.211,0.013,0.056,,
+FWF,9HPT-ND,tract8_tail,8.0,78,,R2,0.27,0.191,0.017,0.08,,
+FWF,9HPT-ND,DELTA tract16 - classical4,,78,,cvR2 diff,,0.126,,,-0.023,0.343
+FWF,9HPT-ND,DELTA tract4_tail - classical4,,78,,cvR2 diff,,0.112,,,-0.028,0.299
+FWF,9HPT-ND,DELTA tract8_tail - classical4,,78,,cvR2 diff,,0.091,,,-0.036,0.274
+FWF,SDMT,tract16,16.0,79,,R2,0.358,0.168,0.032,0.19,,
+FWF,SDMT,classical4,4.0,79,,R2,0.143,0.022,0.031,0.121,,
+FWF,SDMT,tract4_tail,4.0,79,,R2,0.285,0.23,0.011,0.055,,
+FWF,SDMT,tract8_tail,8.0,79,,R2,0.293,0.205,0.014,0.089,,
+FWF,SDMT,DELTA tract16 - classical4,,79,,cvR2 diff,,0.163,,,0.007,0.308
+FWF,SDMT,DELTA tract4_tail - classical4,,79,,cvR2 diff,,0.208,,,0.081,0.337
+FWF,SDMT,DELTA tract8_tail - classical4,,79,,cvR2 diff,,0.184,,,0.061,0.312
+FWF,MSFC-SDMT,tract16,16.0,74,,R2,0.393,0.189,0.034,0.204,,
+FWF,MSFC-SDMT,classical4,4.0,74,,R2,0.093,-0.005,0.02,0.098,,
+FWF,MSFC-SDMT,tract4_tail,4.0,74,,R2,0.267,0.194,0.014,0.073,,
+FWF,MSFC-SDMT,tract8_tail,8.0,74,,R2,0.286,0.194,0.015,0.092,,
+FWF,MSFC-SDMT,DELTA tract16 - classical4,,74,,cvR2 diff,,0.212,,,0.068,0.391
+FWF,MSFC-SDMT,DELTA tract4_tail - classical4,,74,,cvR2 diff,,0.203,,,0.078,0.35
+FWF,MSFC-SDMT,DELTA tract8_tail - classical4,,74,,cvR2 diff,,0.202,,,0.083,0.346

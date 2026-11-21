@@ -72,6 +72,7 @@ MS100Public/
 | Table S3 | `rev_qMRI.m` | Ridge regression with demographic covariates |
 | Table S4 | `paper_bh_p_correction.m`, `rev_p_correct.m` | Bonferroni-Holm corrected p-values |
 | Table S5 | `rev_lesionload.m` | Lesion-load ridge regression |
+| Cross-validation check | `revisionExtras/cross_validation/code/run_nested_cv.m` | Nested cross-validation of tract-based vs classical models, see `revisionExtras/cross_validation/README.md` |
 
 ## Configuration Notes
 
